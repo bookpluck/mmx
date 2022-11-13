@@ -24,7 +24,7 @@ ERB pages can assume this HTML is provided:
     <header>
       <!-- head code that you will provide via partial -->    
     </header>
-      <!-- page code will be rendered here -->    
+    <!-- page code will be rendered here -->    
   </body>
 </html>
 ```
