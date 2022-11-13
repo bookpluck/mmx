@@ -11,6 +11,11 @@
   margin-top: 0.25rem;
 }
 
+.styleguide li {
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
 .styleguide b:before {
   border-radius: 3px;
   color: MediumSeaGreen;
@@ -121,7 +126,7 @@
   background: White;
   padding: 0.75rem 0 0.5rem;
   position: sticky;
-  top:0;
+  top: 0;
 }
 
 .styleguide h4 {

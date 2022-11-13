@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 # gem install filewatcher -v 1.1.1
-filewatcher 'erb/**/*' './bin/build'
+filewatcher 'erb/**/*' './mmx/bin/build'
 
