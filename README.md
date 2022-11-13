@@ -1,12 +1,13 @@
 # Starting a New Static Site
 
+0. `git submodule add https://github.com/bookpluck/mmx.git`
 0. __Create partials__
    - Add `mmx-config` directory to your project root.
    - Add `partials` directory in `mmx-config`.
    - Add `_head.html.erb` and `_header.html.erb` files in `partials` directory. 
       - note: `<head>` and `<header>` tags are provided by the mmx template
       - see: [Provided HTML](#provided-html)
-0. __Create an `erb` directory and add pages.
+0. __Create an `erb` directory and add pages__
    - see: [Provided HTML](#provided-html)
 0. __Run `mmx/bin/build`__
 
