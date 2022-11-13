@@ -1,0 +1,144 @@
+#!/usr/bin/env ruby
+
+require 'date'
+require 'erb'
+require 'fileutils'
+require 'forwardable'
+require 'ostruct'
+
+site_config = OpenStruct.new({
+  source_path: "#{__dir__}/../../erb",
+  destination_base_path: "#{__dir__}/../../site/pages",
+  partials_path: "#{__dir__}/../../mmx-config/partials",
+  page_template: "#{__dir__}/../templates/page.html.erb",
+})
+FileUtils.remove_dir(site_config.destination_base_path) if File.exists?(site_config.destination_base_path)
+
+
+module MetaTaggable
+  def meta_tags
+    @meta_tags ||= OpenStruct.new(default_meta_tags)
+  end
+
+  def set_meta_tags(defined_tags)
+    @meta_tags = OpenStruct.new({ 
+      **default_meta_tags,
+      **defined_tags,
+    })
+  end
+
+  def default_meta_tags
+    {
+      title: "",
+      description: "",
+    }
+  end
+end
+
+class Page
+  include MetaTaggable
+  attr_reader :body
+
+  def initialize(full_path, site_config)
+    @site_config = site_config
+    @path, _slash, @file_name = full_path.rpartition('/')
+    initialize_body 
+  end
+
+  def render_partial(partial_name, **context)
+    Partial.new(partial_name, @site_config, **context).fill
+  end
+
+  def destination_file
+    "#{destination_path}/#{destination_file_name}"
+  end
+
+  def destination_path
+    "#{@site_config.destination_base_path}/#{@path}"
+  end
+
+  def path_to_root
+    depth = @path.count("/") + 1
+    "../" * depth
+  end
+
+  private
+
+  def initialize_body
+    @body = ERB
+      .new(raw_body, trim_mode: "-")
+      .result(binding)
+      .gsub(/\n/, "\n\s\s\s\s")
+      .strip 
+  end
+
+  def raw_body
+    File.read("#{@site_config.source_path}/#{@path}/#{@file_name}")
+  end
+
+  def destination_file_name
+    @file_name.gsub(".erb", "")
+  end
+end
+
+class Partial
+  include MetaTaggable
+
+  def initialize(partial_name, site_config, **context)
+    @partial_name = partial_name
+    @site_config = site_config
+    context.each do |name, value|
+      instance_variable_set("@#{name}", value.strip)
+    end
+  end
+
+  def fill
+    ERB.new(raw_template, trim_mode: "->").result(binding)
+  end
+
+  private
+
+  def raw_template
+    File.read("#{@site_config.partials_path}/#{@partial_name}.html.erb").strip
+  end
+end
+
+class Template
+  include MetaTaggable
+  extend Forwardable
+  def_delegators :@page, :body, :meta_tags, :path_to_root
+
+  def initialize(template_path, page, site_config)
+    @template_path = template_path
+    @page = page
+    @site_config = site_config
+  end
+
+  def fill
+    ERB.new(raw_template).result(binding)
+  end
+
+  private
+
+  def render_partial(partial_name, **context)
+    Partial.new(partial_name, @site_config, **context).fill
+  end
+
+  def raw_template
+    File.read(@template_path)
+  end
+end
+
+Dir["#{site_config.source_path}/**/*"]
+  .reject {|fn| File.directory?(fn) }
+  .map { |file| file.split(site_config.source_path).last }
+  .each do |file_path|
+    page = Page.new(file_path, site_config)
+    FileUtils.mkdir_p page.destination_path
+    FileUtils.touch page.destination_file
+    html = Template.new(site_config.page_template, page, site_config).fill
+    File.open(page.destination_file, "w") { |f| f.puts html }
+  end
+
+puts "BUILT\n\n"
+
