@@ -5,10 +5,24 @@ require 'erb'
 require 'fileutils'
 require 'forwardable'
 require 'ostruct'
+require 'yaml'
+
+site_options_path = "#{__dir__}/../../mmx-config/options.yml"
+site_options_defaults = {
+  "use_pages_in_site_path" => true,
+}
+OPTIONS = if File.exists? (site_options_path)
+  {
+    **site_options_defaults,
+    **YAML.load_file(site_options_path),
+  }
+else
+  site_options_defaults
+end
 
 site_config = OpenStruct.new({
-  source_path: "#{__dir__}/../../erb",
-  destination_base_path: "#{__dir__}/../../site/pages",
+  source_path:  "#{__dir__}/../../erb" ,
+  destination_base_path: OPTIONS['use_pages_in_site_path'] ? "#{__dir__}/../../site/pages" : "#{__dir__}/../../site",
   partials_path: "#{__dir__}/../../mmx-config/partials",
   page_template: "#{__dir__}/../templates/page.html.erb",
 })
@@ -46,7 +60,7 @@ class Page
   end
 
   def render_partial(partial_name, **context)
-    Partial.new(partial_name, @site_config, **context).fill
+    Partial.new(partial_name, @site_config, self, **context).fill
   end
 
   def destination_file
@@ -83,13 +97,16 @@ end
 
 class Partial
   include MetaTaggable
+  extend Forwardable
+  def_delegators :@page, :body, :meta_tags, :path_to_root
 
-  def initialize(partial_name, site_config, **context)
+  def initialize(partial_name, site_config, page, **context)
     @partial_name = partial_name
     @site_config = site_config
     context.each do |name, value|
       instance_variable_set("@#{name}", value.strip)
     end
+    @page = page
   end
 
   def fill
@@ -121,7 +138,7 @@ class Template
   private
 
   def render_partial(partial_name, **context)
-    Partial.new(partial_name, @site_config, **context).fill
+    Partial.new(partial_name, @site_config, @page, **context).fill
   end
 
   def raw_template
