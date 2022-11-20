@@ -4,7 +4,7 @@
 0. __Create partials__
    - Add `mmx-config` directory to your project root.
    - Add `partials` directory in `mmx-config`.
-   - Add `_head.html.erb` and `_header.html.erb` and `_footer` files in `partials` directory. 
+   - Add `_head.html.erb` and `_header.html.erb` and `_footer.html.erb` files in `partials` directory. 
       - note: `<head>` and `<header>` tags are provided by the mmx template
       - see: [Recommended head content](#recommended-head)
       - see: [Provided HTML](#provided-html)
