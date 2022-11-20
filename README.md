@@ -30,7 +30,7 @@ ERB pages can assume this HTML is provided:
   </head>
   <body>
     <header>
-      <!-- head code that you will provide via partial -->    
+      <!-- header code that you will provide via partial -->    
     </header>
     <!-- page code will be rendered here -->    
   </body>
