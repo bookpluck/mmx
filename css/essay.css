@@ -42,13 +42,6 @@
   line-height: 1.5;
 }
 
-.essay blockquote cite {
-  color: Gray;
-  font-size: 1rem;
-  font-style: normal;
-  margin-top: 0.5rem;
-}
-
 @media only screen and (min-width: 1001px) {
   .essay blockquote p,
   .essay blockquote cite {

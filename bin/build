@@ -22,7 +22,7 @@ end
 
 site_config = OpenStruct.new({
   source_path:  "#{__dir__}/../../erb" ,
-  destination_base_path: OPTIONS['use_pages_in_site_path'] ? "#{__dir__}/../../site/pages" : "#{__dir__}/../../site",
+  destination_base_path: OPTIONS['use_pages_in_site_path'] ? "#{__dir__}/../../www/html" : "#{__dir__}/../../www",
   partials_path: "#{__dir__}/../../mmx-config/partials",
   page_template: "#{__dir__}/../templates/page.html.erb",
 })
