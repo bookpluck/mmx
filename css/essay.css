@@ -1,23 +1,23 @@
 .essay aside {
+  border-radius: 3px;
   margin: 2em 0;
   overflow-wrap: break-word;
-  border-radius: 3px;
   padding: 0 2.5rem 0 2.5rem;
 }
 
 .essay aside strong {
   display: block;
-  text-align: center;
   font-family: sans-serif;
   font-size: 2rem;
+  font-style: italic;
   font-weight: 400;
   line-height: 1.25;
-  font-style: italic;
+  text-align: center;
 }
 
 .essay aside small {
-  display: block;
   color: #333;
+  display: block;
   font-family: sans-serif;
   font-size: 1.35rem;
   font-weight: 400;
@@ -25,7 +25,7 @@
 }
 
 .essay blockquote {
-  z-index: 1;
+  border-radius: 3px;
   margin-block-end: 0.75rem;
   margin-block-start: 0.75rem;
   margin-inline-end: 0px;
@@ -34,8 +34,8 @@
   margin-right: 0px;
   margin-top: 0px;
   overflow-wrap: break-word;
-  border-radius: 3px;
   padding: 0 2.5rem 0 2.5rem;
+  z-index: 1;
 }
 
 .essay blockquote p {
@@ -43,10 +43,10 @@
 }
 
 .essay blockquote cite {
-  font-style: normal;
-  margin-top: 0.5rem;
   color: Gray;
   font-size: 1rem;
+  font-style: normal;
+  margin-top: 0.5rem;
 }
 
 @media only screen and (min-width: 1001px) {
@@ -57,73 +57,73 @@
 }
 
 .essay blockquote div {
-  margin-top: 1rem;
   line-height: 1.15;
+  margin-top: 1rem;
 }
 
 .essay hr {
-  border: none;
-  border-top: 2px solid black;
   border-bottom: none;
-  padding-bottom: 0.5rem;
+  border-top: 2px solid black;
+  border: none;
   margin-top: 1.25rem;
+  padding-bottom: 0.5rem;
 }
 
 .essay article h1 {
+  color: #534987;
   font-family: sans-serif;
-  text-transform: uppercase;
-  font-weight: 900;
   font-size: 3.5rem;
   font-style: italic;
-  margin-top: 3.5rem;
+  font-weight: 900;
   line-height: 0.85;
-  color: #534987;
-  text-align: center;
   margin-bottom: 2rem;
+  margin-top: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .essay h2 {
   font-family: sans-serif;
-  margin-top: 0.75rem;
-  margin-bottom: 0.1rem;
-  font-weight: 600;
   font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+  margin-top: 0.75rem;
 }
 
 .essay h3 {
   font-family: sans-serif;
-  margin-top: 0.75rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
   font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-top: 0.75rem;
 }
 
 .essay h3 a {
-  text-decoration: none;
-  line-height: 1;
   color: #222;
+  line-height: 1;
+  text-decoration: none;
 }
 
 .essay h4 {
   font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin: 4rem 0 0;
   text-align: center;
-  font-weight: 600;
-  font-size: 1.5rem;
 }
 
 .essay img {
-  max-width: 100%;
   max-height: 30rem;
+  max-width: 100%;
 }
 
 @media only screen and (min-width: 1001px) {
   .essay img {
     display: block;
     margin: auto;
-    width: auto;
-    max-width: 100%;
     max-height: 80vh;
+    max-width: 100%;
+    width: auto;
   }
 }
 
@@ -141,30 +141,30 @@
 }
 
 .essay figure figcaption {
-  padding: 0 0.5rem;
-  font-size: 0.75rem;
   color: #555;
+  font-size: 0.75rem;
   line-height: 1.15;
   margin-top: 0.25rem;
+  padding: 0 0.5rem;
 }
 
 .essay figure figcaption a {
-  font-size: 0.75rem;
   color: #555;
+  font-size: 0.75rem;
 }
 
 @media only screen and (min-width: 1001px) {
   .essay figure figcaption {
-    padding: 0;
     line-height: 0.7;
     margin-top: 0.5rem;
+    padding: 0;
   }
 }
 
 article.essay {
-  margin-top: 2.5rem;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2.5rem;
   padding: 0 1rem 3rem 1rem;
 }
 
@@ -196,9 +196,9 @@ article.essay > div {
 }
 
 .essay fieldset {
-  margin-top: 4rem;
   border: 2px solid #333;
   color: #333;
+  margin-top: 4rem;
 }
 
 .essay fieldset a {
@@ -220,17 +220,17 @@ article.essay > div {
 }
 
 .essay legend {
-  border: 2px solid #333;
   background-color: White;
+  border: 2px solid #333;
   color: #333;
   padding: 0 0.5rem;
 }
 
 .essay span.emphasized {
-  font-family: sans-serif;
-  font-weight: 500;
-  font-style: italic;
-  font-size: 1.25rem;
   color: #534987; 
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 500;
 }
 
