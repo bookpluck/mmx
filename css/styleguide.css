@@ -1,3 +1,7 @@
+.styleguide {
+  padding-bottom: 3rem;
+}
+
 .styleguide section {
   border-bottom: 5px solid WhiteSmoke;
   border-left: 5px solid WhiteSmoke;
@@ -16,38 +20,22 @@
   margin-top: 0.25rem;
 }
 
-.styleguide b:before {
-  border-radius: 3px;
-  color: MediumSeaGreen;
-  content: '\02713';
-  font-size: 1.35rem;
-  font-weight: bolder;
-  margin-right: 0.5rem;
-}
-
 .styleguide b {
   color: MediumSeaGreen;
-  display: block;
+  display: inline-block;
   font-size: 1.15rem;
   margin-top: 1rem;
-}
-
-.styleguide u:before {
-  border-radius: 3px;
-  color: IndianRed;
-  content: '\02717';
-  font-size: 1.35rem;
-  font-weight: bolder;
-  margin-right: 0.5rem;
+  vertical-align: 3px;
 }
 
 .styleguide u {
   color: IndianRed;
-  display: block;
+  display: inline-block;
   font-size: 1.15rem;
   font-weight: bold;
   margin-top: 1rem;
   text-decoration: none;
+  vertical-align: 3px;
 }
 
 .styleguide aside {
@@ -64,17 +52,14 @@
   color: DimGray;
   display: block;
   font-family: Arial, sans-serif;
-  font-family: inherit;
   font-size: 1.15rem;
   font-style: normal;
   font-variant: small-caps;
   font-weight: bolder;
   margin-bottom: 0.5rem;
   text-align: left;
-}
-
-.styleguide aside b:before {
-  display: none;
+  display:inline-block;
+  vertical-align: 3px;
 }
 
 .styleguide aside b {
@@ -85,10 +70,6 @@
   font-weight: bolder;
   margin-bottom: 0.5rem;
   margin-top: 0;
-}
-
-.styleguide aside u:before {
-  display: none;
 }
 
 .styleguide aside u {

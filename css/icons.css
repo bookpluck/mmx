@@ -1,0 +1,60 @@
+i.icon {
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: 0 50%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center center;
+  width: 1rem;
+  height: 1rem;
+  background-color: #111;
+  padding: 0 0.25rem;
+  z-index: 2;
+}
+
+
+/* SIZES ----------------------------------------------------- */
+
+i.icon.md {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+i.icon.lg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+
+/* COLORS ---------------------------------------------------- */
+
+i.icon.green {
+  background-color: MediumSeaGreen;
+}
+
+i.icon.gray {
+  background-color: Gray;
+}
+
+i.icon.red {
+  background-color: IndianRed;
+}
+
+/* ICONS ----------------------------------------------------- */
+
+i.icon.bang-circle {
+  mask-image: url(./icons/bang-circle.png);
+  -webkit-mask-image: url(./icons/bang-circle.svg);
+}
+
+i.icon.check-circle {
+  mask-image: url(./icons/check-circle.png);
+  -webkit-mask-image: url(./icons/check-circle.svg);
+}
+
+i.icon.tip {
+  mask-image: url(./icons/tip.png);
+  -webkit-mask-image: url(./icons/tip.svg);
+}
+
