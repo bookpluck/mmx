@@ -129,7 +129,9 @@
 @media only screen and (min-width: 1001px) {
   .essay figure {
     margin: 0 0 2rem;
-    width: 100%;
+    margin-left: -2rem;
+    width: 110%;
+    text-align: center;
   }
 }
 
