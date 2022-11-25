@@ -16,3 +16,90 @@ main {
   font-size: 1.15rem;
 }
 
+hr {
+  border: none;
+  border-top: 1.5px solid black;
+  margin: 2rem 0;
+}
+
+main section.feed-lg {
+  max-width: 100%;
+  padding: 0.25rem 0.25rem 2rem;;
+  margin-bottom: 2rem;
+  border-bottom: 1.5px solid black;
+}
+
+@media only screen and (min-width: 1001px) {
+  main section.feed-lg {
+    padding: 0 3rem 2rem;
+  }
+}
+
+main section.feed-lg strong {
+  font-size: 2.25rem;
+  font-weight: bolder;
+  line-height: 1.15;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+main section img {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+main section.feed-md {
+  padding: 0 3rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 1001px) {
+  main section.feed-md {
+    padding: 0 1.15rem;
+    max-width: 45%;
+    width: 45%;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+main section.feed-sm {
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+@media only screen and (min-width: 1001px) {
+  main section.feed-sm {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-bottom: 0; 
+  }
+}
+
+main section.feed-sm img {
+  display: none;
+}
+
+@media only screen and (min-width: 1001px) {
+  main section.feed-sm img {
+    display: inline-block;
+    max-height: 10rem;
+    max-width: 10rem;
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  main section.feed-sm p {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  main section.feed-sm a {
+    margin-top: 1rem;
+  }
+}
+

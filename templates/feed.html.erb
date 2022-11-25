@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+  <head>
+    <%= render_partial(:_head) %>
+  </head>
+  <body>
+    <header>
+      <%= render_partial(:_header) %>
+    </header>
+    <main>
+      <section class="feed-lg">
+        <img src="./<%= pages[0]['image_feed_lg'] %>" />
+        <strong><%= pages[0]['title'] %></strong>
+        <p><%= pages[0]['description'] %></p>
+        <a href="./<%= pages[0]['path'] %>.html">Read</a>
+      </section>
+      <section class="feed-md">
+        <img src="./<%= pages[1]['image_feed_sm'] %>" />
+        <strong><%= pages[1]['title'] %></strong>
+        <p><%= pages[1]['description'] %></p>
+        <a href="./<%= pages[1]['path'] %>.html">Read</a>
+      </section>
+      <section class="feed-md">
+        <img src="./<%= pages[2]['image_feed_sm'] %>" />
+        <strong><%= pages[2]['title'] %></strong>
+        <p><%= pages[2]['description'] %></p>
+        <a href="./<%= pages[2]['path'] %>.html">Read</a>
+      </section>
+      <hr>
+      <% pages.slice(3..-1).each do |page| %>
+        <section class="feed-sm">
+          <img src="./<%= page['image_feed_sm'] %>" />
+          <div>
+            <strong><%= page['title'] %></strong>
+            <p><%= page['description'] %></p>
+            <a href="./<%= page['path'] %>.html">Read</a>
+          </div>
+        </section>
+      <% end %>
+    </main>
+  </body>
+</html>
+

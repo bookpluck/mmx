@@ -7,27 +7,14 @@ require 'forwardable'
 require 'ostruct'
 require 'yaml'
 
-site_options_path = "#{__dir__}/../../mmx-config/options.yml"
-site_options_defaults = {
-  "use_pages_in_site_path" => true,
-}
-OPTIONS = if File.exists? (site_options_path)
-  {
-    **site_options_defaults,
-    **YAML.load_file(site_options_path),
-  }
-else
-  site_options_defaults
-end
-
 site_config = OpenStruct.new({
   source_path:  "#{__dir__}/../../erb" ,
-  destination_base_path: OPTIONS['use_pages_in_site_path'] ? "#{__dir__}/../../www/html" : "#{__dir__}/../../www",
+  destination_base_path: "#{__dir__}/../../www/html",
   partials_path: "#{__dir__}/../../mmx-config/partials",
   page_template: "#{__dir__}/../templates/page.html.erb",
+  feed_template: "#{__dir__}/../templates/feed.html.erb",
 })
 FileUtils.remove_dir(site_config.destination_base_path) if File.exists?(site_config.destination_base_path)
-
 
 module MetaTaggable
   def meta_tags
@@ -98,7 +85,7 @@ end
 class Partial
   include MetaTaggable
   extend Forwardable
-  def_delegators :@page, :body, :meta_tags, :path_to_root
+  def_delegators :@page, :meta_tags
 
   def initialize(partial_name, site_config, page, **context)
     @partial_name = partial_name
@@ -156,6 +143,50 @@ Dir["#{site_config.source_path}/**/*"]
     html = Template.new(site_config.page_template, page, site_config).fill
     File.open(page.destination_file, "w") { |f| f.puts html }
   end
+
+class Feed
+  def initialize(site_config)
+    @site_config = site_config
+  end
+
+  def build
+    puts pages
+    feed_file_path = "#{@site_config.destination_base_path}/feed.html"
+    FileUtils.touch feed_file_path
+    File.open(feed_file_path, "w") { |f| f.puts html }
+  end
+
+  def pages
+    @pages ||= begin
+      path = "#{__dir__}/../../feed.yml"
+      if File.exists?(path)
+        YAML.load_file(path)['pages']
+      else
+        [] 
+      end
+    end
+  end
+
+  def render_partial(partial_name, **context)
+    Partial.new(partial_name, @site_config, self, **context).fill
+  end
+
+  def meta_tags
+    OpenStruct.new({})
+  end
+ 
+  private
+
+  def html
+    ERB.new(raw_template).result(binding)
+  end
+ 
+  def raw_template
+    File.read(@site_config.feed_template)
+  end
+end
+
+Feed.new(site_config).build
 
 puts "BUILT\n\n"
 
