@@ -5,6 +5,11 @@
 page_defaults: &page_defaults
   author_email: jack@marginchronicles.com
 
+# list your public pages from most recent to least.
+# this list will be used to:
+# - build a sitemap.txt
+# - build a feed.html
+# - build an rss feed
 pages:
   - <<: *page_defaults
     path: essays/best-first-word
