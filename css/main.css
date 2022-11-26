@@ -24,7 +24,9 @@ hr {
 
 /* FEED-LG ------------------------------------------------------------------ */
 
-.feed a {
+.feed a, 
+.feed a:hover {
+  color: Black;
   text-decoration: none;
 }
 
