@@ -6,6 +6,7 @@ require 'fileutils'
 require 'forwardable'
 require 'ostruct'
 require 'yaml'
+require 'psych'
 
 site_config = OpenStruct.new({
   source_path:  "#{__dir__}/../../erb" ,
@@ -147,24 +148,19 @@ Dir["#{site_config.source_path}/**/*"]
 class Feed
   def initialize(site_config)
     @site_config = site_config
+    @path = "#{__dir__}/../../feed.yml"
   end
 
   def build
-    puts pages
-    feed_file_path = "#{@site_config.destination_base_path}/feed.html"
-    FileUtils.touch feed_file_path
-    File.open(feed_file_path, "w") { |f| f.puts html }
+    if File.exists?(@path)
+      feed_file_path = "#{@site_config.destination_base_path}/feed.html"
+      FileUtils.touch feed_file_path
+      File.open(feed_file_path, "w") { |f| f.puts html }
+    end
   end
 
   def pages
-    @pages ||= begin
-      path = "#{__dir__}/../../feed.yml"
-      if File.exists?(path)
-        YAML.load_file(path)['pages']
-      else
-        [] 
-      end
-    end
+    @pages ||= YAML.safe_load(File.read(@path), aliases: true)['pages']
   end
 
   def render_partial(partial_name, **context)
