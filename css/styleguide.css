@@ -1,5 +1,7 @@
 .styleguide {
+  margin: 0 auto;
   padding-bottom: 3rem;
+  max-width: 45rem;
 }
 
 .styleguide section {

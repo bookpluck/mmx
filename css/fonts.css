@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('./fonts/NotoSerif-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('./fonts/Oswald-Bold.ttf') format('truetype')
+}
