@@ -10,20 +10,26 @@
     </header>
     <main>
       <section class="feed-lg">
-        <img src="./<%= pages[0]['image_feed_lg'] %>" />
+        <figure>
+          <img src="./<%= pages[0]['image_banner_md'] %>" />
+        </figure>
         <strong><%= pages[0]['title'] %></strong>
         <p><%= pages[0]['description'] %></p>
         <a href="./<%= pages[0]['path'] %>.html">Read</a>
       </section>
       <div class="feed-md-container">
         <section class="feed-md">
-          <img src="./<%= pages[1]['image_feed_sm'] %>" />
+          <figure>
+            <img src="./<%= pages[1]['image_banner_sm'] %>" />
+          </figure>
           <strong><%= pages[1]['title'] %></strong>
           <p><%= pages[1]['description'] %></p>
           <a href="./<%= pages[1]['path'] %>.html">Read</a>
         </section>
         <section class="feed-md">
-          <img src="./<%= pages[2]['image_feed_sm'] %>" />
+          <figure>
+            <img src="./<%= pages[2]['image_banner_sm'] %>" />
+          </figure>
           <strong><%= pages[2]['title'] %></strong>
           <p><%= pages[2]['description'] %></p>
           <a href="./<%= pages[2]['path'] %>.html">Read</a>
@@ -32,7 +38,9 @@
       <hr>
       <% pages.slice(3..-1).each do |page| %>
         <section class="feed-sm">
-          <img src="./<%= page['image_feed_sm'] %>" />
+          <figure>
+            <img src="./<%= page['image_banner_sm'] %>" />
+          </figure>
           <div>
             <strong><%= page['title'] %></strong>
             <p><%= page['description'] %></p>

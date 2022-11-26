@@ -20,36 +20,109 @@ hr {
   margin: 2rem 0;
 }
 
+/* FEED-LG ------------------------------------------------------------------ */
+
 main section.feed-lg {
   max-width: 100%;
-  padding: 0.25rem 0.25rem 2rem;;
+  padding: 0.25rem 0.5rem 2rem;;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   border-bottom: 1.5px solid black;
 }
 
-@media only screen and (min-width: 1001px) {
-  main section.feed-lg {
-    padding: 0 3rem 2rem;
-  }
+main section.feed-lg figure {
+  margin: 0;
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+ 
+main section.feed-lg img {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
 }
 
 main section.feed-lg strong {
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   font-weight: bolder;
   line-height: 1.15;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-main section img {
-  max-width: 100%;
-  width: 100%;
-  margin-bottom: 1rem;
+main section.feed-lg p {
+  font-size: 1.15rem;
+  line-height: 1.15;
 }
 
+main section.feed-lg a {
+  display: block;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1001px) {
+  main section.feed-lg {
+    padding: 0 3rem 2rem;
+  }
+
+  main section.feed-lg strong {
+    font-size: 2.25rem;
+    line-height: 1.15;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  main section.feed-lg p {
+    font-size: 1.35rem;
+    line-height: 1.35;
+  }
+}
+
+
+/* FEED-MD ------------------------------------------------------------------ */
+
 main section.feed-md {
-  padding: 0 3rem;
+  padding: 0 1rem;
   margin-bottom: 3rem;
+}
+
+main div.feed-md-container {
+  width: 100%;
+}
+
+main section.feed-md figure {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+ 
+main section.feed-md img {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+main section.feed-md strong {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+main section.feed-md p {
+  padding: 0 1rem;
+  margin-block-start: 0.5rem;
+  font-size: 1rem;
+}
+
+main section.feed-md a {
+  display: block;
+  text-align: center;
 }
 
 @media only screen and (min-width: 1001px) {
@@ -66,7 +139,30 @@ main section.feed-md {
     flex-direction: row; 
     justify-content: flex-start;
   }
+
+  main section.feed-md figure {
+    margin-bottom: 1rem; 
+  }
+ 
+  main section.feed-md img {
+    padding: 1.25rem;
+  }
+
+  main section.feed-md strong {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  main section.feed-md p {
+    padding: 0;
+    margin-block-start: 0.5rem;
+    font-size: 1.15rem;
+  }
 }
+
+
+/* FEED-MD ------------------------------------------------------------------ */
 
 main section.feed-sm {
   margin-bottom: 2rem;
@@ -78,20 +174,36 @@ main section.feed-sm {
     display: flex;
     flex-direction: row;
     padding: 0;
-    margin-bottom: 0; 
+    margin-bottom: 2rem; 
   }
 }
 
-main section.feed-sm img {
+main section.feed-sm figure, 
+main section.feed-sm img { 
   display: none;
 }
 
+main section.feed-sm p {
+  font-size: 1.15rem;
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+
+
 @media only screen and (min-width: 1001px) {
-  main section.feed-sm img {
+  main section.feed-sm figure {
+    margin: 0;
     display: inline-block;
     max-height: 10rem;
     max-width: 10rem;
+    padding: 0 1rem 1rem 0;
+  }
+ 
+  main section.feed-sm img {
+    box-sizing: border-box;
     padding: 0 1rem;
+    display: block;
+    max-width: 100%;
   }
 }
 
