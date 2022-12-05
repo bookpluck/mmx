@@ -3,7 +3,8 @@
 ```yml
 --                                                                                          
 documents:                                                                                  
-  - title:                                                                                  
+  - code:
+    title:                                                                                  
     author:                                                                                 
     blurb:                                                                                  
     cover:                                                                                  
