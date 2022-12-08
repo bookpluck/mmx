@@ -1,16 +1,16 @@
 # Biblio YAML Specification
 
 ```yml
---                                                                                          
-documents:                                                                                  
+---                                                                                       
+sources:                                                                                  
   - code:
     title:                                                                                  
     author:                                                                                 
     blurb:                                                                                  
-    cover:                                                                                  
-    buy_link:                                                                                   
+    cover:                                                                                 
+    buy_link:
     borrow_link:
-    collection:    
+    collection:
 ```
 
 ## Buy Link
