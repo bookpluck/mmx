@@ -1,7 +1,14 @@
 .styleguide {
   margin: 0 auto;
   padding-bottom: 3rem;
+  padding-left: 1rem;
   max-width: 45rem;
+}
+
+@media only screen and (min-width: 1001px) {
+  .styleguide {
+    padding-left: 0;
+  }
 }
 
 .styleguide section {
@@ -64,24 +71,16 @@
   vertical-align: 3px;
 }
 
+.styleguide aside u,
 .styleguide aside b {
   display: block;
   font-family: Arial, sans-serif;
   font-size: 1.15rem;
   font-variant: small-caps;
   font-weight: bolder;
+  line-height: 1.15rem;
   margin-bottom: 0.5rem;
-  margin-top: 0;
-}
-
-.styleguide aside u {
-  display: block;
-  font-family: Arial, sans-serif;
-  font-size: 1.15rem;
-  font-variant: small-caps;
-  font-weight: bolder;
-  margin-bottom: 0.5rem;
-  margin-top: 0;
+  margin-top: 0.75rem;
 }
 
 .styleguide aside p {

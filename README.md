@@ -1,22 +1,37 @@
-# Starting a New Static Site
+## Starting a New Static Site
 
-0. `git submodule add https://github.com/bookpluck/mmx.git`
-0. __Create partials__
-   - Add `mmx-config` directory to your project root.
-   - Add `partials` directory in `mmx-config`.
-   - Add `_head.html.erb` and `_header.html.erb` and `_footer.html.erb` files in `partials` directory. 
-      - note: `<head>` and `<header>` tags are provided by the mmx template
-      - see: [Recommended head content](#recommended-head)
-      - see: [Provided HTML](#provided-html)
-0. __Create an `erb` directory and add pages__
+### 1. Add MMX
+
+From the project root, run:
+`git submodule add https://github.com/bookpluck/mmx.git`
+
+### 2. Create partials
+
+- Add `mmx-config` directory to your project root.
+- Add `partials` directory in `mmx-config`.
+- Add `_head.html.erb` and `_header.html.erb` and `_footer.html.erb` files in `partials` directory. 
+   - note: `<head>` and `<header>` tags are provided by the mmx template
+   - see: [Recommended head content](#recommended-head)
    - see: [Provided HTML](#provided-html)
-0. __Run `mmx/bin/build`__
-0. __Import styles__
-   - create `css/main.css`
-     - import css from MMX: `@import url('../mmx/css/main.css');`
-   - in `_head.html.erb`
-     - add `<link rel="stylesheet" type="text/css" href="../../css/main.css">`
-   - `mmx/bin/build`
+   
+### 3. Create an `erb` directory and add pages
+
+- see: [Provided HTML](#provided-html)
+
+### 4. Build the site
+
+Run `mmx/bin/build`
+
+
+### 5. Import styles
+
+- create `css/main.css`
+  - import css from MMX: `@import url('../mmx/css/main.css');`
+- in `_head.html.erb`
+  - add `<link rel="stylesheet" type="text/css" href="../../css/main.css">`
+- `mmx/bin/build`
+
+___
 
 ## Provided HTML
 
