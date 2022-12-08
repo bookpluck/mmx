@@ -92,19 +92,30 @@ class Partial
     @partial_name = partial_name
     @site_config = site_config
     context.each do |name, value|
-      instance_variable_set("@#{name}", value.strip)
+      instance_variable_set("@#{name}", value)
     end
     @page = page
+    @sources = sources
   end
 
   def fill
     ERB.new(raw_template, trim_mode: "->").result(binding)
   end
 
+  def sources
+    return unless File.exist?("#{__dir__}/../../biblio.yml")
+
+    YAML.safe_load(File.read("#{__dir__}/../../biblio.yml"), aliases: true)['sources']
+  end
+
   private
 
   def raw_template
-    File.read("#{@site_config.partials_path}/#{@partial_name}.html.erb").strip
+    if File.exist?("#{@site_config.partials_path}/#{@partial_name}.html.erb")
+      File.read("#{@site_config.partials_path}/#{@partial_name}.html.erb").strip
+    else
+      File.read("#{__dir__}/../partials/#{@partial_name}.html.erb").strip
+    end
   end
 end
 

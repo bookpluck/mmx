@@ -1,0 +1,46 @@
+section.sources {
+  border-top: 1.5px solid black;
+  margin-top: 3rem;
+  padding-top: 1rem;
+}
+
+section.sources .source {
+  display: flex;
+  flex-direction: row;
+}
+
+section.sources .source .cover {
+  flex: 0;
+}
+
+section.sources .source .cover img {
+  display: none;
+}
+
+@media only screen and (min-width: 1001px) {
+  section.sources .source .cover img {
+    display: block;
+    min-width: 100px;
+  }
+}
+
+section.sources .source .metadata {
+  flex: 1;
+}
+
+@media only screen and (min-width: 1001px) {
+  section.sources .source .metadata {
+    padding-left: 2rem;
+  }
+}
+
+section.sources .source .metadata p {
+  font-size: smaller;
+  line-height: 1.25;
+}
+
+section.sources .source .metadata a {
+  font-size: 1.25rem;
+  font-variant: small-caps;
+}
+

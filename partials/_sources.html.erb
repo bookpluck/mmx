@@ -1,0 +1,27 @@
+<section class="sources">
+  <strong>SOURCES</strong>
+  <br />
+  <br />
+  <br />
+
+  <% @source_codes.each do |source_code| %>
+    <% source = @sources.find { |s| s["code"] == source_code } %>
+    <div class="source">
+      <div class="cover">
+        <img src="<%= source['cover'] %>" />
+      </div>
+      <div class="metadata">
+        <strong><%= source["title"] %></strong>
+        <br />
+        <small>by <%= source["author"] %></small>
+        <p><%= source["blurb"] %></p>
+        <p>
+          <a target="_blank" href="<%= source["buy_link"] %>">buy</a>
+          &nbsp;|&nbsp;
+          <a target="_blank" href="<%= source["borrow_link"] %>">borrow</a>
+        </p>
+      </div>
+    </div>
+  <% end %>
+</section>
+
