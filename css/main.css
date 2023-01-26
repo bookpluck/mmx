@@ -25,6 +25,11 @@ hr {
   margin: 2rem 0;
 }
 
+.center-text {
+  width: 100%;
+  text-align: center;
+}
+
 /* FEED-LG ------------------------------------------------------------------ */
 
 .feed a, 
@@ -244,4 +249,5 @@ main section.feed-sm strong {
     max-width: 35rem;
   }
 }
+
 
