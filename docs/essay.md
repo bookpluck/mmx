@@ -5,9 +5,11 @@
 ```html
 <main>
   <article class="essay">
-    <h1>
-      Essay Title
-    </h1>
+    <hgroup>
+      <h1>Essay Title</h1>
+      <p>Essay Subtitle</p>
+      <address>by Author Name</address>
+    </hgroup>
     <figure>
       <img src="path/to/image.jpg" alt="alt text" />
       <figcaption>
