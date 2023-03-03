@@ -61,17 +61,104 @@
   padding-bottom: 0.5rem;
 }
 
+.essay hgroup {
+  text-align: center;
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.essay hgroup hr {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-top-width: 1.5px;
+}
+
+@media only screen and (min-width: 1001px) {
+  .essay hgroup hr {
+    max-width: 40%;
+  }
+}
+
+.essay hgroup p {
+  margin: 0;
+  margin-top: 0.25rem;
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+
+.essay hgroup p cite {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (min-width: 1001px) {
+  .essay hgroup p {
+    font-size: 1.15rem;
+  }
+}
+
+.essay hgroup small {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.essay hgroup address {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: bold;
+}
+
 .essay h1 {
-  border-bottom: 1.5px solid #222;
   font-family: sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-weight: 900;
   line-height: 0.85;
-  margin-bottom: 3rem;
-  margin-top: 3.5rem;
-  padding-bottom: 0.5rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.5rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+.essay h1.xs {
+  font-size: 1rem;
+}
+
+.essay h1.sm {
+  font-size: 1.5rem; 
+}
+
+.essay h1.lg {
+  font-size: 2rem;
+}
+
+.essay h1.xl {
+  font-size: 2.5rem;
+}
+
+@media only screen and (min-width: 1001px) {
+  .essay h1 {
+    font-size: 2.5rem;
+  }
+
+  .essay h1.xs {
+    font-size: 1.25rem;
+  }
+  
+  .essay h1.sm {
+    font-size: 2rem; 
+  }
+  
+  .essay h1.lg {
+    font-size: 3rem;
+  }
+
+  .essay h1.xl {
+    font-size: 3.5rem;
+  }
 }
 
 .essay h2 {
@@ -79,7 +166,7 @@
   font-size: 2.25rem;
   font-weight: 600;
   margin-bottom: 0.1rem;
-  margin-top: 0.75rem;
+  margin-top: 1.5rem;
 }
 
 .essay h3 {
