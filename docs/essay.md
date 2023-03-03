@@ -6,8 +6,11 @@
 <main>
   <article class="essay">
     <hgroup>
+      <small>Category</small>
+      <hr>
       <h1>Essay Title</h1>
       <p>Essay Subtitle</p>
+      <hr>
       <address>by Author Name</address>
     </hgroup>
     <figure>
