@@ -12,6 +12,8 @@ page_defaults: &page_defaults
 # - build an rss feed
 pages:
   - <<: *page_defaults
+    author_name: Jack Windeyer
+    page_type: Essay
     path: essays/best-first-word
     title: The Perfect First Word for Your Next Story
     description: >
