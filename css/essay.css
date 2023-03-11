@@ -64,7 +64,7 @@
 .essay hgroup {
   text-align: center;
   margin-top: 3.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .essay hgroup hr {
@@ -115,8 +115,8 @@
 .essay h1 {
   font-family: sans-serif;
   font-size: 1.75rem;
+  line-height: 1.75rem;
   font-weight: 900;
-  line-height: 0.85;
   margin-top: 2.25rem;
   margin-bottom: 0.5rem;
   text-align: center;
@@ -125,39 +125,48 @@
 
 .essay h1.xs {
   font-size: 1rem;
+  line-height: 1rem;
 }
 
 .essay h1.sm {
   font-size: 1.5rem; 
+  line-height: 1.5rem;
 }
 
 .essay h1.lg {
   font-size: 2rem;
+  line-height: 2rem;
 }
 
 .essay h1.xl {
   font-size: 2.5rem;
+  line-height: 2.5rem;
 }
 
 @media only screen and (min-width: 1001px) {
   .essay h1 {
     font-size: 2.5rem;
+    line-height: 2.5rem;
   }
 
   .essay h1.xs {
     font-size: 1.25rem;
+    line-height: 1.25rem;
   }
   
   .essay h1.sm {
     font-size: 2rem; 
+    line-height: 2rem;
   }
   
   .essay h1.lg {
     font-size: 3rem;
+    line-height: 3rem;
   }
 
   .essay h1.xl {
     font-size: 3.5rem;
+    line-height: 3.5rem;
   }
 }
 
