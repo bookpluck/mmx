@@ -1,0 +1,25 @@
+:root {
+
+  /* FONTS */
+
+  --primary-font: 'Frank Ruhl Libre', serif;
+  --secondary-font: 'Frank Ruhl Libre', serif;
+
+  --header-font: var(--secondary-font);
+  --header-font-weight: 400;
+
+  --body-font: var(--primary-font);
+  --body-font-size: 1.1875rem;
+  --body-line-height: 1.875rem;
+  --body-color: #222;
+
+  /* TIDBITS */
+  
+  --border-width: 1px;
+  --border-color: #333;
+
+  /* COLORS */
+
+  --background-color: White;
+}
+

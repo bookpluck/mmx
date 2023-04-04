@@ -1,7 +1,16 @@
 section.sources {
-  border-top: 1.5px solid black;
-  margin-top: 3rem;
-  padding-top: 1rem;
+  border-top: var(--border-width) solid var(--border-color);
+  padding-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+section.sources h2 {
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  display: block;
 }
 
 section.sources .source {
@@ -36,12 +45,21 @@ section.sources .source .metadata {
 }
 
 section.sources .source .metadata p {
-  font-size: smaller;
-  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  line-height: var(--body-line-height);
+  line-height: 1.2;
+}
+
+section.sources .source .metadata u {
+  display: block;
+  text-decoration-thickness: 1px;
+  text-underline-position: under;
+  margin-bottom: 0.25rem;
 }
 
 section.sources .source .metadata a {
-  font-size: 1.25rem;
-  font-variant: small-caps;
+  font-family: var(--secondary-font);
 }
 

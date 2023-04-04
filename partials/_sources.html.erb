@@ -1,8 +1,5 @@
 <section class="sources">
-  <strong>SOURCES</strong>
-  <br />
-  <br />
-  <br />
+  <h2>Sources</h2>
 
   <% @source_codes.each do |source_code| %>
     <% source = @sources.find { |s| s["code"] == source_code } %>
@@ -11,14 +8,17 @@
         <img src="<%= source['cover'] %>" />
       </div>
       <div class="metadata">
-        <strong><%= source["title"] %></strong>
-        <br />
-        <small>by <%= source["author"] %></small>
+        <u>
+          <%= source["title"] %>
+        </u>
+        <p>
+          by <%= source["author"] %>
+        </p>
         <p><%= source["blurb"] %></p>
         <p>
-          <a target="_blank" href="<%= source["buy_link"] %>">buy</a>
-          &nbsp;|&nbsp;
-          <a target="_blank" href="<%= source["borrow_link"] %>">borrow</a>
+          <a target="_blank" href="<%= source["buy_link"] %>">Buy</a>
+          &nbsp;-&nbsp;
+          <a target="_blank" href="<%= source["borrow_link"] %>">Borrow</a>
         </p>
       </div>
     </div>

@@ -1,15 +1,96 @@
 @font-face {
   font-family: 'Noto Serif';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   src: local(''),
        url('./fonts/NotoSerif-Regular.ttf') format('truetype')
 }
 
 @font-face {
-  font-family: 'Oswald';
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/NotoSerif-Italic.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Noto Serif';
   font-style: normal;
   font-weight: 700;
   src: local(''),
-       url('./fonts/Oswald-Bold.ttf') format('truetype')
+       url('./fonts/NotoSerif-Bold.ttf') format('truetype')
 }
+
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''),
+       url('./fonts/NotoSerif-BoldItalic.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/FrankRuhlLibre-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('./fonts/FrankRuhlLibre-Bold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local(''),
+       url('./fonts/Roboto-Thin.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('./fonts/Roboto-Light.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/Roboto-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('./fonts/Roboto-Medium.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('./fonts/Roboto-Bold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('./fonts/Roboto-Black.ttf') format('truetype')
+}
+
