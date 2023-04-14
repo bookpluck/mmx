@@ -5,28 +5,32 @@
 ```html
 <main>
   <article class="essay">
-    <hgroup>
+    <header>
       <small>Category</small>
-      <hr>
-      <h1>Essay Title</h1>
-      <p>Essay Subtitle</p>
-      <hr>
+      <hgroup>
+        <h1>Essay Title</h1>
+        <p>Essay Subtitle</p>
+      </hgroup>
       <address>by Author Name</address>
-    </hgroup>
+      <figure>
+        <!-- img and figcation tags for a essay header image ->
+      </figure>    
+    </header>
+    <p>
+     
+    </p>
+    <blockquote>
+      <p>
+        
+      </p>
+      <cite>&mdash;Title</cite> by Author Name
+    </blockquote>
     <figure>
       <img src="path/to/image.jpg" alt="alt text" />
       <figcaption>
         Image copyright 
       </figcaption>
     </figure>
-
-    <p>
-    </p>
-    <blockquote>
-      <p>
-      </p>
-      <cite>&mdash;Title</cite> by Author Name
-    </blockquote>
   </article>
 </main>
 ```
