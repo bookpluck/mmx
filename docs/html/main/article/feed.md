@@ -9,7 +9,6 @@ page_defaults: &page_defaults
 # this list will be used to:
 # - build a sitemap.txt
 # - build a feed.html
-# - build an rss feed
 pages:
   - <<: *page_defaults
     author_name: Jack Windeyer
