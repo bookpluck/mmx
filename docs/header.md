@@ -54,4 +54,17 @@ The rest of this guide digs into each of the child elements of the `header` elem
 
 ### H-Groups as Nameplates
 
+```html
+<hgroup>
+  <h1>
+    The Eunice News
+  </h1>
+  <p>
+    (A Consolidation of The New Era and Clarion News)
+  </p>
+</hgroup>
+```
+The _Nameplate_ of a newspaper is the section that includes the name of the periodical. It may also include an image, 
+slogan or brief detail about the paper.
+
 ### Navigating Banners
