@@ -1,5 +1,7 @@
 :root {
 
+  --breakpoint: 1001px;
+
   /* FONTS */
 
   --primary-font: 'Frank Ruhl Libre', serif;
@@ -20,7 +22,7 @@
 
   /* COLORS */
 
-  --background-color: White;
+  --background-color: WhiteSmoke;
   --link-color: #0969da;
 }
 
