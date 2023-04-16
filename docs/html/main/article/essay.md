@@ -3,36 +3,34 @@
 ## Example
 
 ```html
-<main>
-  <article class="essay">
-    <header>
-      <small>Category</small>
-      <hgroup>
-        <h1>Essay Title</h1>
-        <p>Essay Subtitle</p>
-      </hgroup>
-      <address>by Author Name</address>
-      <figure>
-        <!-- img and figcation tags for a essay header image ->
-      </figure>    
-    </header>
-    <p>
-     
-    </p>
-    <blockquote>
-      <p>
-        
-      </p>
-      <cite>&mdash;Title</cite> by Author Name
-    </blockquote>
+<article class="essay">
+  <header>
+    <small>Category</small>
+    <hgroup>
+      <h1>Essay Title</h1>
+      <p>Essay Subtitle</p>
+    </hgroup>
+    <address>by Author Name</address>
     <figure>
-      <img src="path/to/image.jpg" alt="alt text" />
-      <figcaption>
-        Image copyright 
-      </figcaption>
-    </figure>
-  </article>
-</main>
+      <!-- img and figcation tags for a essay header image ->
+    </figure>    
+  </header>
+  <p>
+
+  </p>
+  <blockquote>
+    <p>
+
+    </p>
+    <cite>&mdash;Title</cite> by Author Name
+  </blockquote>
+  <figure>
+    <img src="path/to/image.jpg" alt="alt text" />
+    <figcaption>
+      Image copyright 
+    </figcaption>
+  </figure>
+</article>
 ```
 
 ### Tags
