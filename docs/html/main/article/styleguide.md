@@ -10,46 +10,44 @@
 ## Example
 
 ```html
-<main>
-  <article class="styleguide">
-    <menu id="toc">
-      <li>
-        <a href="#title">How to Write</a>
-      </li>
-    </menu>
-    
-    <h1 id="title">How to Write</h1> 
+<article class="styleguide">
+  <menu id="toc">
+    <li>
+      <a href="#title">How to Write</a>
+    </li>
+  </menu>
 
-    <h2 id="Metadata">Metadata</h2> 
-    
-    <h3>Titles</h3>
-    <section>
-      <b>Prefer Them Short & Sweet</b>
-      <aside>
-        <b>strong</b>
-        <p>
-          <!-- example of good -->
-        </p>
-        <u>weak</u>
-        <p>
-          <!-- example of bad -->
-        </p>        
-      </aside>
+  <h1 id="title">How to Write</h1> 
+
+  <h2 id="Metadata">Metadata</h2> 
+
+  <h3>Titles</h3>
+  <section>
+    <b>Prefer Them Short & Sweet</b>
+    <aside>
+      <b>strong</b>
       <p>
-        <!-- explanation -->
+        <!-- example of good -->
       </p>
-      <u>Avoid Giving Too Much Away</u>
-      <aside>
-        <strong>note</strong>
-        <p>
-          <!-- further explanation / short side discussion -->
-        </p>
-      </aside>
+      <u>weak</u>
       <p>
-        <!-- explanation -->
+        <!-- example of bad -->
+      </p>        
+    </aside>
+    <p>
+      <!-- explanation -->
+    </p>
+    <u>Avoid Giving Too Much Away</u>
+    <aside>
+      <strong>note</strong>
+      <p>
+        <!-- further explanation / short side discussion -->
       </p>
-    </section>
-  </article>
-</main>
+    </aside>
+    <p>
+      <!-- explanation -->
+    </p>
+  </section>
+</article>
 ```
 
