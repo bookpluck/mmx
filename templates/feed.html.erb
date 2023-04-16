@@ -9,61 +9,67 @@
       <%= render_partial(:_header) %>
     </header>
     <main>
-    <article class="feed">
-      <a href="./<%= pages[0]['path'] %>">
-        <section class="feed-lg">
-          <figure>
-            <img src="./<%= pages[0]['image_banner_md'] %>" />
-          </figure>
-          <strong>
-            <%= pages[0]['title'] %>
-          </strong>
-          <p>
-            <%= pages[0]['description'] %>
-          </p>
-        </section>
-      </a>
-      <div class="feed-md-container">
-        <section class="feed-md">
-          <a href="./<%= pages[1]['path'] %>.html">
-            <figure>
-              <img src="./<%= pages[1]['image_banner_sm'] %>" />
-            </figure>
-            <strong>
-              <%= pages[1]['title'] %>
-            </strong>
-            <p><%= pages[1]['description'] %></p>
-          </a>
-        </section>
-        <section class="feed-md">
-          <a href="./<%= pages[2]['path'] %>.html">
-            <figure>
-              <img src="./<%= pages[2]['image_banner_sm'] %>" />
-            </figure>
-            <strong>
-              <%= pages[2]['title'] %>
-            </strong>
-            <p><%= pages[2]['description'] %></p>
-          </a>
-        </section>
-      </div>
-      <hr>
-      <% pages.slice(3..-1).each do |page| %>
-        <a href="./<%= page['path'] %>.html">
-          <section class="feed-sm">
-            <figure>
-              <img src="./<%= page['image_banner_sm'] %>" />
-            </figure>
-            <div>
+      <aside>
+      </aside>
+      <section>
+        <article class="feed">
+          <a href="./<%= pages[0]['path'] %>">
+            <section class="feed-lg">
+              <figure>
+                <img src="./<%= pages[0]['image_banner_md'] %>" />
+              </figure>
               <strong>
-                <%= page['title'] %>
+                <%= pages[0]['title'] %>
               </strong>
-              <p><%= page['description'] %></p>
-            </div>
-          </section>
-        </a>
-      <% end %>
-    </article>
+              <p>
+                <%= pages[0]['description'] %>
+              </p>
+            </section>
+          </a>
+          <div class="feed-md-container">
+            <section class="feed-md">
+              <a href="./<%= pages[1]['path'] %>">
+                <figure>
+                  <img src="./<%= pages[1]['image_banner_sm'] %>" />
+                </figure>
+                <strong>
+                  <%= pages[1]['title'] %>
+                </strong>
+                <p><%= pages[1]['description'] %></p>
+              </a>
+            </section>
+            <section class="feed-md">
+              <a href="./<%= pages[2]['path'] %>">
+                <figure>
+                  <img src="./<%= pages[2]['image_banner_sm'] %>" />
+                </figure>
+                <strong>
+                  <%= pages[2]['title'] %>
+                </strong>
+                <p><%= pages[2]['description'] %></p>
+              </a>
+            </section>
+          </div>
+          <hr>
+          <% pages.slice(3..-1).each do |page| %>
+            <a href="./<%= page['path'] %>">
+              <section class="feed-sm">
+                <figure>
+                  <img src="./<%= page['image_banner_sm'] %>" />
+                </figure>
+                <div>
+                  <strong>
+                    <%= page['title'] %>
+                  </strong>
+                  <p><%= page['description'] %></p>
+                </div>
+              </section>
+            </a>
+          <% end %>
+        </article>
+      </section>
+      <aside>
+      </aside>
     </main>
     <footer>
       <%= render_partial(:_footer) %>

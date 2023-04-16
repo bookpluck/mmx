@@ -5,21 +5,37 @@
 
 html, body {
   background: var(--background-color);
-  font-size: 16px; 
-  font-family: var(--primary-font); 
+  font-size: 16px;
+  font-family: var(--primary-font);
   line-height: 1.5rem;
   margin-top: 0;
   color: black;
   margin: 0;
 }
 
-main {
+body {
   margin-left: auto;
   margin-right: auto;
-  max-width: 48rem;
+  max-width: 80rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   padding: 0 0.5rem 3rem;
   font-size: var(--body-font-size);
   color: #222;
+}
+
+main > aside {
+  flex: 1;
+  padding: 0;
+  margin: 0;
+}
+
+main > section {
+  flex: 2;
 }
 
 hr {
@@ -29,6 +45,13 @@ hr {
 }
 
 .center-text {
+  width: 100%;
+  text-align: center;
+}
+
+.tombstone {
+  margin: 4rem 0 8rem;
+  font-size: 1.25rem;
   width: 100%;
   text-align: center;
 }

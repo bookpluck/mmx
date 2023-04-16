@@ -60,8 +60,8 @@
 
 .essay hgroup {
   text-align: center;
-  margin-bottom: 4rem;
-  margin-top: 2.25rem;
+  margin-bottom: 8rem;
+  margin-top: 0;
 }
 
 .essay hgroup hr {
@@ -72,15 +72,8 @@
   border-top-width: 1.5px;
 }
 
-@media only screen and (min-width: 1001px) {
-  .essay hgroup hr {
-    max-width: 40%;
-  }
-}
-
 .essay hgroup p {
   margin: 0;
-  margin-top: 0.25rem;
   margin-bottom: 2rem;
   font-size: var(--body-font-size);
 }
@@ -97,12 +90,6 @@
   }
 }
 
-.essay hgroup small {
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: bold;
-}
-
 .essay hgroup address {
   font-style: normal;
 }
@@ -111,62 +98,32 @@
   font-family: var(--header-font);
   font-weight: var(--header-font-weight);
   font-size: 2rem;
-  line-height: 1.7;
-  margin-bottom: 1rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
   text-align: center;
   font-variant-ligatures: none;
 }
 
 .essay h1.xs {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .essay h1.sm {
-  font-size: 1.5rem; 
-  line-height: 2rem;
+  font-size: 1.75rem; 
 }
 
 .essay h1.lg {
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 2.25rem;
 }
 
 .essay h1.xl {
   font-size: 2.5rem;
-  line-height: 3rem;
-}
-
-@media only screen and (min-width: 1001px) {
-  .essay h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-  }
-
-  .essay h1.xs {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  
-  .essay h1.sm {
-    font-size: 2rem; 
-    line-height: 2.5rem;
-  }
-  
-  .essay h1.lg {
-    font-size: 3rem;
-    line-height: 3.5rem;
-  }
-
-  .essay h1.xl {
-    font-size: 3.5rem;
-    line-height: 4rem;
-  }
 }
 
 .essay h2 {
-  font-size: 2.25rem;
-  line-height: 3rem;
+  font-size: 2rem;
+  line-height: 1.5;
   font-weight: var(--header-font-weight);
   margin-top: 3rem;
   margin-bottom: 1.5rem;
@@ -174,6 +131,7 @@
 
 .essay h3 {
   font-size: 1.75rem;
+  line-height: 1.5;
   font-weight: var(--header-font-weight);
   margin-top: 3rem;
   margin-bottom: 1.5rem;
@@ -187,6 +145,7 @@
 
 .essay h4 {
   font-size: 1.5rem;
+  line-height: 1.5;
   font-weight: var(--header-font-weight);
   margin: 4rem 0 0;
   text-align: center;
@@ -245,13 +204,9 @@ article.essay {
   padding: 0 1rem 3rem 1rem;
 }
 
-article.essay > div {
-  margin-bottom: 2.5rem;
-}
-
 @media only screen and (min-width: 1001px) {
   article.essay {
-    margin-top: 3.5rem;
+    margin-top: 0;
     max-width: 50rem;
     padding: 0 1.5rem 5rem 1.5rem;
   }
@@ -264,7 +219,7 @@ article.essay > div {
 .essay p {
   line-height: var(--body-line-height);
   margin-top: 0;
-  margin-bottom: 1.5625rem;
+  margin-bottom: var(--spacing-md);
 }
 
 .essay div[role="doc-subtitle"] {

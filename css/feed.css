@@ -1,4 +1,5 @@
-.feed a, 
+.feed a,
+.feed a:visited,
 .feed a:hover {
   color: var(--body-color);
   text-decoration: none;
@@ -22,32 +23,32 @@ main section.feed-lg {
 
 main section.feed-lg figure {
   margin: 0;
+  padding: 0;
   display: block;
-  max-width: 100%;
   width: 100%;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-md);
 }
- 
+
 main section.feed-lg img {
   box-sizing: border-box;
   display: block;
-  width: 100%;
+  max-height: 30rem;
 }
 
 main section.feed-lg strong {
   font-family: var(--header-font);
   display: block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 main section.feed-lg p {
   font-family: var(--body-font);
   font-weight: 400;
   font-size: var(--body-font-size);
-  line-height: 1.3;
+  line-height: var(--body-line-height);
   margin-block-end: 0;
 }
 
@@ -58,20 +59,19 @@ main section.feed-lg a {
 
 @media only screen and (min-width: 1001px) {
   main section.feed-lg {
-    padding: 0 0 4rem;
-    margin: 0 3rem 4rem;
+    padding: 0 0 5rem;
+    margin: 0;
   }
 
   main section.feed-lg strong {
-    font-size: 2rem;
-    line-height: 1.2;
+    font-size: 1.75rem;
+    line-height: 1.5;
   }
 
   main section.feed-lg p {
-    max-width: 30rem;
     font-size: var(--body-font-size);
     color: #222;
-    line-height: 1.4;
+    line-height: var(--body-line-height);
   }
 }
 
@@ -80,7 +80,7 @@ main section.feed-lg a {
 
 main section.feed-md {
   padding: 0 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 main div.feed-md-container {
@@ -90,12 +90,12 @@ main div.feed-md-container {
 main section.feed-md figure {
   margin: 0;
   padding: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--spacing-md);
   display: block;
   max-width: 100%;
   width: 100%;
 }
- 
+
 main section.feed-md img {
   box-sizing: border-box;
   display: block;
@@ -108,7 +108,7 @@ main section.feed-md strong {
   font-family: var(--header-font);
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 main section.feed-md p {
@@ -117,7 +117,7 @@ main section.feed-md p {
   font-family: var(--body-font);
   font-weight: 400;
   font-size: var(--body-font-size);
-  line-height: 1.3;
+  line-height: var(--body-line-height);
 }
 
 @media only screen and (min-width: 1001px) {
@@ -131,15 +131,12 @@ main section.feed-md p {
 
   main div.feed-md-container {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: flex-start;
   }
 
   main section.feed-md figure {
-    margin-bottom: 1rem; 
-  }
- 
-  main section.feed-md img {
+    margin-bottom: var(--spacing-md);
   }
 
   main section.feed-md strong {
@@ -163,8 +160,8 @@ main section.feed-sm {
   border-bottom: var(--border-width) solid var(--border-color);
 }
 
-main section.feed-sm figure, 
-main section.feed-sm img { 
+main section.feed-sm figure,
+main section.feed-sm img {
   display: none;
 }
 
@@ -175,14 +172,14 @@ main section.feed-sm p {
   font-family: var(--body-font);
   font-weight: 400;
   font-size: var(--body-font-size);
-  line-height: 1.3;
+  line-height: var(--body-line-height);
 }
 
 main section.feed-sm strong {
   font-family: var(--header-font);
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 @media only screen and (min-width: 1001px) {
@@ -191,7 +188,7 @@ main section.feed-sm strong {
     flex-direction: row;
     padding: 0;
     padding-bottom: 3rem;
-    margin-bottom: 3rem; 
+    margin-bottom: 3rem;
   }
 
   main section.feed-sm figure {
@@ -201,7 +198,7 @@ main section.feed-sm strong {
     max-width: 10rem;
     padding-bottom: 0;
   }
- 
+
   main section.feed-sm img {
     box-sizing: border-box;
     padding: 0 1rem;

@@ -4,21 +4,29 @@
 
   /* FONTS */
 
+  --primary-font: 'Noto Serif', serif;                           
+  --secondary-font: 'Noto Serif', serif;
   --primary-font: 'Frank Ruhl Libre', serif;
   --secondary-font: 'Frank Ruhl Libre', serif;
-
   --header-font: var(--secondary-font);
   --header-font-weight: 400;
 
   --body-font: var(--primary-font);
   --body-font-size: 1.1875rem;
-  --body-line-height: 1.875rem;
+  --body-line-height: 1.5; 
   --body-color: #222;
 
   /* TIDBITS */
   
   --border-width: 1px;
   --border-color: #333;
+
+  /* LAYOUT */
+
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1.1875rem;
+  --spacing-lg: 2.25rem;
+  --spacing-xl: 3rem;
 
   /* COLORS */
 
