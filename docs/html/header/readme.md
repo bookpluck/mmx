@@ -27,14 +27,14 @@ this guide will reconstruct an exemplar of the print-newspaper header:
       16 Pages This Issue
     </div>
   </section>
-  <nav>
+  <aside>
     <a href="https://www.lapress.com/">
       Member Lousiana Press Association
     </a>
     <a href="https://www.nna.org/">
       Member National Editorial Association
     </a>    
-  </nav>
+  </aside>
 </header>
 ```
 
@@ -67,4 +67,4 @@ The rest of this guide digs into each of the child elements of the `header` elem
 The _Nameplate_ of a newspaper is the section that includes the name of the periodical. It may also include an image, 
 slogan or brief detail about the paper.
 
-### Navigating Banners
+### Aside for Banner
