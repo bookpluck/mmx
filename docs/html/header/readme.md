@@ -28,12 +28,15 @@ this guide will reconstruct an exemplar of the print-newspaper header:
     </div>
   </section>
   <aside>
-    <a href="https://www.lapress.com/">
+    <div>
       Member Lousiana Press Association
-    </a>
-    <a href="https://www.nna.org/">
+    </div>
+    <div>
+      Eunice, Louisiana, Thursday, November 29, 1951
+    </div>
+    <div>
       Member National Editorial Association
-    </a>    
+    </div>    
   </aside>
 </header>
 ```
