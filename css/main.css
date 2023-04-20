@@ -29,13 +29,13 @@ main {
 }
 
 main > aside {
-  flex: 1;
+  flex: 2;
   padding: 0;
   margin: 0;
 }
 
 main > section {
-  flex: 2;
+  flex: 5;
 }
 
 hr {

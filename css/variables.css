@@ -4,7 +4,7 @@
 
   /* FONTS */
 
-  --primary-font: 'Noto Serif', serif;                           
+  --primary-font: 'Noto Serif', serif;
   --secondary-font: 'Noto Serif', serif;
   --primary-font: 'Frank Ruhl Libre', serif;
   --secondary-font: 'Frank Ruhl Libre', serif;
@@ -12,12 +12,12 @@
   --header-font-weight: 400;
 
   --body-font: var(--primary-font);
-  --body-font-size: 1.1875rem;
-  --body-line-height: 1.5; 
+  --body-font-size: 1.125rem;
+  --body-line-height: 1.4;
   --body-color: #222;
 
   /* TIDBITS */
-  
+
   --border-width: 1px;
   --border-color: #333;
 
