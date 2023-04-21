@@ -47,7 +47,17 @@ ERB pages can assume this HTML is provided:
     <header>
       <!-- header code that you will provide via partial -->    
     </header>
-    <!-- page code will be rendered here -->    
+    <main
+      <aside>
+        <!-- left side bar -->                  
+      </aside>     
+      <section>
+        <!-- essay code will be rendered here -->             
+      </section>    
+      <aside>
+        <!-- right side bar -->                           
+      </aside>    
+    </main>
   </body>
 </html>
 ```

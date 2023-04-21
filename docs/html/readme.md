@@ -6,13 +6,13 @@
     <aside>
       <!-- left side bar -->
     </aside>
-    <div>
+    <section>
       <article><!-- essay, styleguide, feed -->
       </article>
       <section>
         <!-- stand-alone section: donation box, site announcements -->
       </section>
-    <div>
+    <section>
     <aside>
       <!-- right side bar -->
     </aside> 
