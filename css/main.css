@@ -28,6 +28,7 @@ main {
   color: #222;
 }
 
+/* side bars */
 main > aside {
   flex: 2;
   padding: 0;
