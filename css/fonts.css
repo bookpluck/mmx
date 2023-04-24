@@ -126,3 +126,11 @@
        url('./fonts/Roboto-Black.ttf') format('truetype')
 }
 
+@font-face {
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/FjallaOne-Regular.ttf') format('truetype')
+}
+
