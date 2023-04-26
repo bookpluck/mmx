@@ -6,13 +6,13 @@
 
   --primary-font: 'Noto Serif', serif;
   --secondary-font: 'Noto Serif', serif;
-  --primary-font: 'Frank Ruhl Libre', serif;
-  --secondary-font: 'Frank Ruhl Libre', serif;
+  --primary-font: Heuristica, serif;
+  --secondary-font: Heuristica, serif;
   --header-font: var(--secondary-font);
   --header-font-weight: 400;
 
   --body-font: var(--primary-font);
-  --body-font-size: 1.125rem;
+  --body-font-size: 1rem;
   --body-line-height: 1.4;
   --body-color: #222;
 
@@ -27,6 +27,9 @@
   --spacing-md: 1.1875rem;
   --spacing-lg: 2.25rem;
   --spacing-xl: 3rem;
+
+  --article-x-padding: 1rem;
+  --article-full-width-margin: -1rem;
 
   /* COLORS */
 

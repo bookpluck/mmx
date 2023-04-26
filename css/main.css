@@ -19,11 +19,16 @@ body {
   max-width: 80rem;
 }
 
+a, a:visited {
+  color: #0969da;
+  text-decoration: none;
+}
+
 main {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  padding: 0 0.5rem 3rem;
+  max-width: 80rem;
+  padding: 0 2rem 3rem;
   font-size: var(--body-font-size);
   color: #222;
 }
@@ -33,6 +38,23 @@ main > aside {
   flex: 2;
   padding: 0;
   margin: 0;
+  opacity: 0.5;
+}
+
+main > aside:hover {
+  opacity: 1;
+}
+
+main > aside:first-of-type {
+  border-right: 1px solid #222;
+}
+
+main > aside:last-of-type {
+  border-left: 1px solid #222;
+}
+
+main > aside:first-of-type > section {
+  padding-right: 1rem;
 }
 
 main > section {
