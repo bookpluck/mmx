@@ -1,14 +1,14 @@
 header {
   display: flex;
+  margin-bottom: 0;
   padding: 1rem 2rem 0;
-  margin-bottom: 4rem;
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1025px) {
   header {
     flex-direction: column;
+    margin: 0 auto 0;
     max-width: 80rem;
-    margin: 0 auto 2rem;
   }
 }
 
@@ -16,17 +16,12 @@ header aside {
   margin: 0;
 }
 
-@media only screen and (min-width: 1001px) {
-  header aside {
-  }
-}
-
 header > section {
   display: flex;
   flex-direction: row;
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1025px) {
   header section {
     margin-bottom: 0.5rem;
   }
@@ -37,45 +32,43 @@ header > section > div:last-of-type {
   display: none;
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1025px) {
   header > section > div {
-    flex: 0;
     display: block;
+    flex: 0;
+    height: 150px;
     min-width: 150px;
     width: 150px;
-    height: 150px;
   }
 }
 
 header hgroup {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   flex: 1;
+  justify-content: center;
 }
 
 header hgroup p:first-of-type {
   display: none;
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1025px) {
   header hgroup p:first-of-type {
     display: block;
   }
 }
 
-header h1 {
-}
-
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1025px) {
   header hgroup h1 {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
     font-family: Heuristica, Times, serif;
+    /* this is a magic number and will need to be overriden if the font family changes */
     font-size: 8vw;
     font-weight: 400;
+    justify-content: center;
     margin: 0;
     text-align: center;
   }
@@ -90,14 +83,14 @@ header h1 {
 
 header hgroup h1 a,
 header hgroup h1 a:hover {
-  color: #222;
+  color: var(--body-color);
   text-decoration: none;
 }
 
 header hgroup p:first-of-type {
   color: #333;
-  font-family: Roboto, sans-serif;
-  font-size: 1rem;
+  font-family: var(--sans-serif-primary);
+  font-size: var(--font-size-sm);
   font-weight: 900;
   margin: 0 2rem 1.5rem;
   text-align: center;
@@ -105,10 +98,10 @@ header hgroup p:first-of-type {
 
 header hgroup p:last-of-type {
   color: #333;
-  font-family: Roboto, sans-serif;
-  font-size: 1rem;
+  font-family: var(--sans-serif-primary);
+  font-size: var(--font-size-sm);
   font-weight: 900;
-  margin: 0 2rem 0;
+  margin: 0 2rem;
   text-align: center;
 }
 
@@ -117,23 +110,23 @@ header > aside:last-of-type {
   display: none;
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1025px) {
   header > aside:last-of-type {
+    border-bottom: var(--border-width-xs) solid var(--border-color);
+    border-top: var(--border-width-sm) solid var(--border-color);
     display: flex;
     flex-direction: row;
-    border-bottom: 2px solid #222;
-    border-top: 1px solid #222;
   }
 
   header > aside:last-of-type > div {
     display: flex;
     flex: 1;
-    justify-content: center;
-    text-transform: uppercase;
+    font-family: var(--sans-serif-primary);
     font-size: 0.75rem;
-    font-family: Roboto, sans-serif;
-    line-height: 1.5rem;
     font-weight: 500;
+    justify-content: center;
+    line-height: 1.5rem;
+    text-transform: uppercase;
   }
 
   header > aside:last-of-type > div:first-of-type {

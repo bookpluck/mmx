@@ -1,8 +1,20 @@
 :root {
+  /*
+   BREAKPOINTS
 
-  --breakpoint: 1001px;
+   Upper Bound:  1551px
+   Desktop:      1025px
+  */
 
   /* FONTS */
+
+  --sans-serif-primary: 'Roboto', sans-serif;
+  --sans-serif-secondary: 'Fjalla One', sans-serif;
+  --serif-primary: 'Frank Ruhl Libre', serif;
+  --serif-secondary: 'Heuristica', serif;
+
+
+  --font-size-sm: 1rem;
 
   --primary-font: 'Noto Serif', serif;
   --secondary-font: 'Noto Serif', serif;
@@ -18,6 +30,8 @@
 
   /* TIDBITS */
 
+  --border-width-xs: 1px;
+  --border-width-sm: 2px;
   --border-width: 1px;
   --border-color: #333;
 

@@ -139,8 +139,8 @@ article.essay {
   font-size: 2rem;
   line-height: 1.5;
   font-weight: var(--header-font-weight);
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 .essay h3 {
@@ -224,8 +224,12 @@ article.essay {
   margin-bottom: 1rem;
 }
 
+.essay ul {
+  margin-top: 0;
+}
+
 .essay li {
   margin-bottom: 0.375rem;
-  line-height: 1.7;
+  line-height: var(--body-line-height);
 }
 

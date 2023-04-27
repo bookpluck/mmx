@@ -36,7 +36,7 @@ main {
 /* side bars */
 main > aside {
   flex: 2;
-  padding: 0;
+  padding: 2rem 0 0;
   margin: 0;
   opacity: 0.5;
 }
@@ -59,6 +59,7 @@ main > aside:first-of-type > section {
 
 main > section {
   flex: 5;
+  padding-top: 2rem;
 }
 
 hr {
