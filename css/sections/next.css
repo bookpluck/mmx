@@ -1,0 +1,10 @@
+section.next ul {
+  list-style: none;
+  padding: 0px;
+}
+
+section.next ul li:before {
+  font-size: 1.5rem;
+  content: '\27A5';
+  margin-right: 0.5rem;
+}

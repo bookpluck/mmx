@@ -1,5 +1,5 @@
 .styleguide {
-  font-size: 1rem;
+  font-size: var(--body-font-size);
   padding: 0 var(--article-x-padding) 3rem;
   border-bottom: var(--border-width) solid var(--border-color);
 }
@@ -14,7 +14,7 @@
 }
 
 .styleguide p {
-  font-size: 1rem;
+  font-size: var(--body-font-size);
   line-height: var(--boder-line-height);
   margin-top: 0.25rem;
 }
@@ -22,7 +22,7 @@
 .styleguide > section > b {
   color: MediumSeaGreen;
   display: inline-block;
-  font-size: 1rem;
+  font-size: var(--body-font-size);
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -32,7 +32,7 @@
 .styleguide > section > u {
   color: IndianRed;
   display: inline-block;
-  font-size: 1rem;
+  font-size: var(--body-font-size);
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -42,7 +42,7 @@
 .styleguide aside {
   background-color: #e5e5e5;
   color: DimGray;
-  font-size: 1rem;
+  font-size: var(--body-font-size);
   font-weight: normal;
   margin: 0 var(--article-full-width-margin) 1rem;
   padding: 1rem;
@@ -120,7 +120,7 @@
 }
 
 .styleguide h3 {
-  font-size: 1rem;
+  font-size: var(--body-font-size);
   font-weight: 700;
   margin-bottom: 0.5rem;
   margin-top: 0;
@@ -128,7 +128,7 @@
 
 .styleguide h4 {
   color: DimGray;
-  font-size: 1rem;
+  font-size: var(--body-font-size);
   margin-top: 0.25rem;
   text-align: left;
 }

@@ -1,4 +1,5 @@
 @import url('./fonts.css');
+@import url('./sections/next.css');
 @import url('./sections/notes.css');
 @import url('./sections/sources.css');
 @import url('./sections/generic.css');
@@ -21,7 +22,6 @@ body {
 
 a, a:visited {
   color: #0969da;
-  text-decoration: none;
 }
 
 main {
@@ -54,7 +54,7 @@ main > aside:last-of-type {
 }
 
 main > aside:first-of-type > section {
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
 
 main > section {
