@@ -4,99 +4,6 @@
   border-bottom: var(--border-width) solid var(--border-color);
 }
 
-@media only screen and (min-width: 1001px) {
-  .styleguide {
-  }
-}
-
-.styleguide section {
-  margin-top: 0.5rem;
-}
-
-.styleguide p {
-  font-size: var(--body-font-size);
-  line-height: var(--boder-line-height);
-  margin-top: 0.25rem;
-}
-
-.styleguide > section > b {
-  color: MediumSeaGreen;
-  display: inline-block;
-  font-size: var(--body-font-size);
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  vertical-align: 3px;
-}
-
-.styleguide > section > u {
-  color: IndianRed;
-  display: inline-block;
-  font-size: var(--body-font-size);
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  text-decoration: none;
-}
-
-.styleguide aside {
-  background-color: #e5e5e5;
-  color: DimGray;
-  font-size: var(--body-font-size);
-  font-weight: normal;
-  margin: 0 var(--article-full-width-margin) 1rem;
-  padding: 1rem;
-}
-
-.styleguide aside strong {
-  color: DimGray;
-  display: block;
-  font-family: Arial, sans-serif;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: bolder;
-  margin-bottom: 0.5rem;
-  text-align: left;
-  display:inline-block;
-  vertical-align: 3px;
-}
-
-.styleguide aside u:before {
-  display: block;
-  height: 100%;
-  content: '\2718 \00A0 bad';
-  font-weight: 500;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-variant: small-caps;
-  color: IndianRed;
-  margin-right: 0.5rem;
-}
-
-.styleguide aside b:before {
-  display: block;
-  height: 100%;
-  content: '\2714 \00A0 good';
-  font-weight: 500;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-variant: small-caps;
-  color: MediumSeaGreen;
-  margin-right: 0.5rem;
-}
-
-.styleguide aside u,
-.styleguide aside b {
-  color: DimGray;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-.styleguide aside p {
-  margin-bottom: 0.25rem;
-  margin-top: 0;
-}
-
 .styleguide h1 {
   font-family: 'Noto Serif', serif;
   font-size: 2rem;
@@ -108,7 +15,7 @@
 .styleguide h2 {
   background-color: #333;
   color: white;
-  font-family: Roboto, sans-serif;
+  font-family: var(--sans-serif-primary);
   font-size: 1rem;
   font-weight: 500;
   margin: 0 var(--article-full-width-margin) 0;
@@ -118,23 +25,126 @@
 
 .styleguide h3 {
   border-bottom: 1px solid var(--border-color);
-  border-top: 1px solid var(--border-color);
-  font-family: Roboto, sans-serif;
+  border-top: 2px solid var(--border-color);
+  font-family: var(--sans-serif-primary);
   font-size: 1rem;
   font-weight: 700;
-  margin: 0 var(--article-full-width-margin) 0;
+  margin: 0 var(--article-full-width-margin) 0.5rem;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
 }
 
 .styleguide h4 {
-  color: DimGray;
-  font-size: var(--body-font-size);
-  margin-top: 0.25rem;
   text-align: left;
+  display: inline-block;
+  font-family: var(--sans-serif-primary);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
-.styleguide section hr {
-  border-top-color: LightGray;
+.styleguide p {
+  font-size: var(--body-font-size);
+  line-height: var(--boder-line-height);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.styleguide aside {
+  font-size: var(--body-font-size);
+  font-weight: normal;
+  margin: 0 var(--article-full-width-margin) 1rem;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+}
+
+.styleguide aside strong:before {
+  content: '\273D';
+  display: inline-block;
+  font-family: var(--sans-serif-primary);
+  font-size: 1rem;
+  line-height: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  height: 100%;
+  margin-right: 0.375rem;
+  text-transform: uppercase;
+  color: DimGray;
+}
+
+.styleguide aside strong {
+  color: DimGray;
+  display: block;
+  font-family: var(--sans-serif-primary);
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  display:inline-block;
+  vertical-align: 3px;
+}
+
+.styleguide aside u:before {
+  color: IndianRed;
+  content: '\2718 \00A0 \00A0 weak example';
+  display: block;
+  font-family: var(--sans-serif-primary);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  height: 100%;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+}
+
+.styleguide aside u mark {
+  background-color: transparent;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #EABDBD;
+}
+
+.styleguide aside b mark {
+  background-color: transparent;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #9dd9b8;
+}
+
+.styleguide aside b:before {
+  color: MediumSeaGreen;
+  content: '\2714 \00A0 \00A0 strong example';
+  display: block;
+  font-family: var(--sans-serif-primary);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  height: 100%;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+}
+
+.styleguide aside u:first-letter,
+.styleguide aside b:first-letter {
+  font-size: 1rem;
+}
+
+
+.styleguide aside u,
+.styleguide aside b {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.styleguide aside p {
+  margin-bottom: 0.25rem;
+  margin-top: 0;
 }
 

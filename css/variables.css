@@ -16,8 +16,6 @@
 
   --font-size-sm: 1rem;
 
-  --primary-font: 'Noto Serif', serif;
-  --secondary-font: 'Noto Serif', serif;
   --primary-font: 'Frank Ruhl Libre', serif;
   --secondary-font: 'Frank Ruhl Libre', serif;
   --header-font: var(--secondary-font);
