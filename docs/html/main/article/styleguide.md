@@ -17,37 +17,33 @@
     </li>
   </menu>
 
-  <h1 id="title">How to Write</h1> 
-
+  <h1 id="title">How to Write</h1>
   <h2 id="Metadata">Metadata</h2> 
-
   <h3>Titles</h3>
-  <section>
-    <b>Prefer Them Short & Sweet</b>
-    <aside>
-      <b>strong</b>
-      <p>
-        <!-- example of good -->
-      </p>
-      <u>weak</u>
-      <p>
-        <!-- example of bad -->
-      </p>        
-    </aside>
+  <h4>Prefer Them Short & Sweet</h4>
+  <aside>
+    <b>strong</b>
     <p>
-      <!-- explanation -->
+      <!-- example of good -->
     </p>
-    <u>Avoid Giving Too Much Away</u>
-    <aside>
-      <strong>note</strong>
-      <p>
-        <!-- further explanation / short side discussion -->
-      </p>
-    </aside>
+    <u>weak</u>
     <p>
-      <!-- explanation -->
+      <!-- example of bad -->
+    </p>        
+  </aside>
+  <p>
+    <!-- explanation -->
+  </p>
+  <h4>Avoid Giving Too Much Away</h4>
+  <aside>
+    <strong>note</strong>
+    <p>
+      <!-- further explanation / short side discussion -->
     </p>
-  </section>
+  </aside>
+  <p>
+    <!-- explanation -->
+  </p>
 </article>
 ```
 
