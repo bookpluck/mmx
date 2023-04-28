@@ -54,7 +54,7 @@ main > aside:last-of-type {
 }
 
 main > aside:first-of-type > section {
-  padding-right: 2rem;
+  padding-right: 1.5rem;
 }
 
 main > section {
