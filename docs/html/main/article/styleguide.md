@@ -3,7 +3,7 @@
 ## Guidance
 
 - __Keep it flat.__ Don't go down the rabit hole of using `<h4>` through `<h5>` tags.
-- __Keep it semantic.__ In sections and asides, `<b>` tags represent positive rules
+- __Keep it semantic.__ In asides, `<b>` tags represent positive rules
   (e.g. "Prefer") and `<u>` tags represent negative rules (e.g. "Avoid...").
 
 
