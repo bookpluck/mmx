@@ -33,30 +33,6 @@ main {
   color: #222;
 }
 
-/* side bars */
-main > aside {
-  flex: 2;
-  padding: 2rem 0 0;
-  margin: 0;
-  opacity: 0.5;
-}
-
-main > aside:hover {
-  opacity: 1;
-}
-
-main > aside:first-of-type {
-  border-right: 1px solid #222;
-}
-
-main > aside:last-of-type {
-  border-left: 1px solid #222;
-}
-
-main > aside:first-of-type > section {
-  padding-right: 1.5rem;
-}
-
 main > section {
   flex: 5;
   padding-top: 2rem;
@@ -68,15 +44,34 @@ hr {
   margin: 2rem 0;
 }
 
-.center-text {
-  width: 100%;
-  text-align: center;
-}
-
 .tombstone {
   margin: 4rem 0 8rem;
   font-size: 1.25rem;
   width: 100%;
   text-align: center;
+}
+
+/* TEXT UTILITIES */
+
+.text.center {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.text.up {
+  text-transform: uppercase;
+}
+
+.text.sans {
+  font-family: var(--sans-serif-primary);
+}
+
+.text.lg {
+  font-size: 1.5rem;
+}
+
+.text.xl {
+  font-size: 2rem;
 }
 
