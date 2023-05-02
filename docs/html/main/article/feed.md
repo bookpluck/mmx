@@ -12,10 +12,9 @@ page_defaults: &page_defaults
 pages:
   - <<: *page_defaults
     path: essays/best-first-word  
-    title: The Perfect First Word for Your Next Story    
     byline: Jack Windeyer
     tag: Essay
-    hed: 
+    hed: The Perfect First Word for Your Next Story 
     dek:
     standfirst:
     lede: 
