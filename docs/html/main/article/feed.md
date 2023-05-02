@@ -17,8 +17,10 @@ pages:
     hed: The Perfect First Word for Your Next Story 
     dek:
     standfirst:
-    lede: 
-    nutgraf: 
+    grafs: 
+      - lede paragraph
+      - nut paragraph
+      - third paragraph
     # used on feed page for the spash article    
     img_lg: img/essay-banners/difate-revolt-in-2100.jpg
     # used on feed page for non-splash articles
