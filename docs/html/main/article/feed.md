@@ -24,5 +24,5 @@ pages:
     # used on feed page for the spash article    
     img_lg: img/essay-banners/difate-revolt-in-2100.jpg
     # used on feed page for non-splash articles
-    image_banner_sm: img/essay-banners/difate-revolt-in-2100-sm.jpg
+    image_sm: img/essay-banners/difate-revolt-in-2100-sm.jpg
 ```
