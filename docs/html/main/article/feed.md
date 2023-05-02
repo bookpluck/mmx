@@ -21,8 +21,12 @@ pages:
       - lede paragraph
       - nut paragraph
       - third paragraph
-    # used on feed page for the spash article    
+      
+    # used on feed page for the spash article
+    # should have larger width than height
     img_lg: img/essay-banners/difate-revolt-in-2100.jpg
+    
     # used on feed page for non-splash articles
+    # should be square
     image_sm: img/essay-banners/difate-revolt-in-2100-sm.jpg
 ```
