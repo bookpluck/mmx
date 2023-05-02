@@ -35,5 +35,5 @@ pages:
     
     # used on feed page for non-splash articles
     # should be square
-    image_sm: img/essay-banners/difate-revolt-in-2100-sm.jpg
+    img_sm: img/essay-banners/difate-revolt-in-2100-sm.jpg
 ```
