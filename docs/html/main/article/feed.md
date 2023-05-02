@@ -7,7 +7,7 @@ page_defaults: &page_defaults
 
 # list your public pages from most recent to least.
 # this list will be used to:
-# - build a sitemap.txt
+# - build an rss feed
 # - build a feed.html
 pages:
   - <<: *page_defaults
