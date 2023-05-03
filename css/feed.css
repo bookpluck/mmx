@@ -1,25 +1,14 @@
-.feed a,
-.feed a:visited,
-.feed a:hover {
-  color: var(--body-color);
-  text-decoration: none;
-}
-
-.feed hr {
-  border-top: var(--border-width) solid var(--border-color);
-  margin: 1rem 0;
-}
-
-main article.splash address {
+main article.splash address,
+main article.medium address,
+main article.small address {
   font-style: normal;
   width: 100%;
   text-align: center;
-  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-main article.splash address span {
-  text-transform: none;
+main article.small address {
+  text-align: left;
 }
 
 main article.splash a,
@@ -76,6 +65,16 @@ main article.splash h1 {
   text-align: center;
   text-transform: uppercase;
   position: relative;
+  padding-bottom: 0.75rem;
+}
+
+@media only screen and (min-width: 1025px) {
+  main article.splash h1 {
+    max-width: 30rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin: 0 auto 0.75rem;
+  }
 }
 
 main article.splash h1:before,
@@ -89,16 +88,6 @@ main article.splash h2:before {
   border-bottom: 1.5px solid #222;
 }
 
-@media only screen and (min-width: 1025px) {
-  main article.splash h1 {
-    max-width: 30rem;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    margin: 0 auto 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-}
-
 main article.splash h2 {
   font-family: var(--serif-secondary);
   display: block;
@@ -107,6 +96,7 @@ main article.splash h2 {
   line-height: 1.5;
   text-align: center;
   position: relative;
+  padding-bottom: 0.75rem;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -115,14 +105,12 @@ main article.splash h2 {
     font-size: 1.25rem;
     line-height: 1.4;
     margin: 0 auto 0.75rem;
-    padding-bottom: 0.75rem;
   }
 }
 
 main article.splash p {
   font-family: var(--body-font);
   font-weight: 400;
-  font-size: var(--body-font-size);
   line-height: var(--body-line-height);
   margin-block-end: 0;
   margin-block-start: 0;
@@ -133,7 +121,6 @@ main article.splash p {
   main article.splash p {
     max-width: 30rem;
     margin: 0 auto;
-    font-size: var(--body-font-size);
     color: #222;
     line-height: var(--body-line-height);
   }
@@ -208,6 +195,7 @@ main article.medium h1 {
   line-height: 1.5;
   text-align: center;
   position: relative;
+  padding-bottom: 0.75rem;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -216,7 +204,6 @@ main article.medium h1 {
     font-size: 1.75rem;
     line-height: 2.75rem;
     margin: 0 auto 0.75rem;
-    padding-bottom: 0.75rem;
   }
 }
 
@@ -228,6 +215,7 @@ main article.medium h2 {
   line-height: 1.5;
   text-align: center;
   position: relative;
+  padding-bottom: 0.75rem;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -236,7 +224,6 @@ main article.medium h2 {
     font-size: 1.25rem;
     line-height: 1.4;
     margin: 0 auto 0.75rem;
-    padding-bottom: 0.75rem;
   }
 }
 
@@ -257,7 +244,6 @@ main article.medium p {
   margin-block-end: 0;
   font-family: var(--body-font);
   font-weight: 400;
-  font-size: var(--body-font-size);
   line-height: var(--body-line-height);
   text-indent: 1rem;
 }
@@ -273,7 +259,7 @@ main article.medium p {
 /* SMALL -------------------------------------------------------------------- */
 
 main article.small {
-  padding: 0 1rem 2rem;
+  padding: 2rem 1rem;
   border-bottom: var(--border-width) solid var(--border-color);
 }
 
@@ -311,7 +297,7 @@ main article.small img {
 }
 
 main article.small h1 {
-  font-size: 1.25rem;
+  font-size: var(--body-font-size-mobile);
   line-height: 1.25rem;
   font-weight: 700;
   margin-top: 0;
@@ -319,7 +305,7 @@ main article.small h1 {
 }
 
 main article.small h2 {
-  font-size: var(--body-font-size);
+    font-size: var(--body-font-size-mobile);
   line-height: var(--body-line-height);
   font-style: italic;
   margin-block-start: 0;
@@ -330,12 +316,12 @@ main article.small h2 {
 
 @media only screen and (min-width: 1025px) {
   main article.small h2 {
+    font-size: var(--body-font-size);
     display: block;
   }
 }
 
 main article.small p {
-  font-size: var(--body-font-size);
   line-height: var(--body-line-height);
   margin-block-start: 0;
   margin-block-end: 0.5rem;

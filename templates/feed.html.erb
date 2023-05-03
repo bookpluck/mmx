@@ -26,7 +26,7 @@
             </h2>
           </hgroup>
           <address>
-            <span>By </span><%= pages[0]['byline'] %>
+            by </span><%= pages[0]['byline'] %>
           </address>
           <% pages[0]['grafs'].each do |graf| %>
             <p>
@@ -52,6 +52,9 @@
                 </h1>
                 <h2><%= pages[1]['dek'] %></h2>
               </hgroup>
+              <address>
+                by </span><%= pages[1]['byline'] %>
+              </address>
               <% pages[1]['grafs'].each do |graf| %>
                 <p>
                   <%= graf %>
@@ -73,6 +76,9 @@
                 </h1>
                 <h2><%= pages[2]['dek'] %></h2>
               </hgroup>
+              <address>
+                by </span><%= pages[2]['byline'] %>
+              </address>
               <% pages[2]['grafs'].each do |graf| %>
                 <p>
                   <%= graf %>
@@ -97,6 +103,9 @@
                 <%= page['dek'] %>
               </h2>
             </hgroup>
+            <address>
+              by </span><%= page['byline'] %>
+            </address>
             <% page['grafs']&.first&.tap do |graf| %>
               <p>
                 <%= graf %>

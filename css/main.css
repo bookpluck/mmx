@@ -32,19 +32,28 @@ a:hover {
 
 main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   max-width: 80rem;
   padding: 0 2rem 3rem;
-  font-size: var(--body-font-size);
+  font-size: var(--body-font-size-mobile);
   color: #222;
 }
 
+@media only screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    font-size: var(--body-font-size);
+  }
+}
+
 main > section {
+  order: 1;
   flex: 2;
 }
 
 @media only screen and (min-width: 1025px) {
   main > section {
+    order: 2;
     flex: 5;
     padding-top: 2rem;
     max-width: 50rem;

@@ -1,5 +1,4 @@
 main > aside {
-  display: none;
   flex: 2;
   font-size: var(--body-font-size);
   margin: 0;
@@ -19,11 +18,13 @@ main > aside:hover {
 main > aside:first-of-type {
   border-left: 1px solid #222;
   border-right: 1px solid #222;
+  order: 2;
 }
 
 @media only screen and (min-width: 768px) {
   main > aside:first-of-type {
     display: block;
+    order: 1;
     flex: 1;
     flex-shrink: 1;
   }
@@ -39,11 +40,13 @@ main > aside:first-of-type {
 main > aside:last-of-type {
   border-left: 1px solid #222;
   border-right: 1px solid #222;
+  display: none;
 }
 
 @media only screen and (min-width: 1025px) {
   main > aside:last-of-type {
     display: block;
+    order: 3;
   }
 }
 

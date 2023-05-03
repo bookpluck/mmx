@@ -28,7 +28,7 @@ section.sources .source .cover img {
   display: none;
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1025px) {
   section.sources .source .cover img {
     display: block;
     min-width: 100px;
@@ -39,7 +39,7 @@ section.sources .source .metadata {
   flex: 1;
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1025px) {
   section.sources .source .metadata {
     padding-left: 2rem;
   }
