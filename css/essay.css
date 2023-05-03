@@ -5,10 +5,9 @@ article.essay {
   padding: 0 1rem 3rem 1rem;
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1025px) {
   article.essay {
     margin-top: 0;
-    max-width: 50rem;
     padding: 0 1.5rem 1rem 1.5rem;
   }
 }
@@ -97,7 +96,7 @@ article.essay {
   margin-top: 0.5rem;
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1025px) {
   .essay hgroup p {
      margin-left: auto;
      margin-right: auto;
@@ -170,7 +169,7 @@ article.essay {
   max-width: 100%;
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1025px) {
   .essay img {
     display: block;
     margin: auto;
@@ -186,7 +185,7 @@ article.essay {
   text-align: center;
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1025px) {
   .essay figure {
     margin: 2rem -1.5rem 2rem;
     text-align: center;
@@ -202,7 +201,7 @@ article.essay {
   text-align: center;
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1025px) {
   .essay figure figcaption {
     margin-top: 0.5rem;
     padding: 0.25rem 0 0.75rem;

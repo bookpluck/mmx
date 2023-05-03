@@ -13,61 +13,100 @@
         <%= render_partial(:_sidebar_left) %>
       </aside>
       <section>
-        <article class="feed">
-          <a href="./<%= pages[0]['path'] %>">
-            <section class="feed-lg">
-              <figure>
-                <img src="./<%= pages[0]['image_banner_md'] %>" />
-              </figure>
-              <strong>
-                <%= pages[0]['title'] %>
-              </strong>
-              <p>
-                <%= pages[0]['description'] %>
-              </p>
-            </section>
-          </a>
-          <div class="feed-md-container">
-            <section class="feed-md">
-              <a href="./<%= pages[1]['path'] %>">
-                <figure>
-                  <img src="./<%= pages[1]['image_banner_sm'] %>" />
-                </figure>
-                <strong>
-                  <%= pages[1]['title'] %>
-                </strong>
-                <p><%= pages[1]['description'] %></p>
-              </a>
-            </section>
-            <section class="feed-md">
-              <a href="./<%= pages[2]['path'] %>">
-                <figure>
-                  <img src="./<%= pages[2]['image_banner_sm'] %>" />
-                </figure>
-                <strong>
-                  <%= pages[2]['title'] %>
-                </strong>
-                <p><%= pages[2]['description'] %></p>
-              </a>
-            </section>
-          </div>
-          <hr>
-          <% pages.slice(3..-1).each do |page| %>
-            <a href="./<%= page['path'] %>">
-              <section class="feed-sm">
-                <figure>
-                  <img src="./<%= page['image_banner_sm'] %>" />
-                </figure>
-                <div>
-                  <strong>
-                    <%= page['title'] %>
-                  </strong>
-                  <p><%= page['description'] %></p>
-                </div>
-              </section>
-            </a>
+        <article class="splash">
+          <figure>
+            <img src="./<%= pages[0]['img_lg'] %>" />
+          </figure>
+          <hgroup>
+            <h1>
+              <%= pages[0]['hed'] %>
+            </h1>
+            <h2>
+              <%= pages[0]['dek'] %>
+            </h2>
+          </hgroup>
+          <address>
+            <span>By </span><%= pages[0]['byline'] %>
+          </address>
+          <% pages[0]['grafs'].each do |graf| %>
+            <p>
+              <%= graf %>
+            </p>
           <% end %>
+          <p>
+            <a href="./<%= pages[0]['path'] %>">
+              Continue &#10142;
+            </a>
+          </p>
         </article>
+
+        <div class="article-row">
+          <% if pages[1] %>
+            <article class="medium">
+              <figure>
+                <img src="./<%= pages[1]['img_sm'] %>" />
+              </figure>
+              <hgroup>
+                <h1>
+                  <%= pages[1]['hed'] %>
+                </h1>
+                <h2><%= pages[1]['dek'] %></h2>
+              </hgroup>
+              <% pages[1]['grafs'].each do |graf| %>
+                <p>
+                  <%= graf %>
+                </p>
+              <% end %>
+              <a href="./<%= pages[1]['path'] %>">
+                Continue &#10142;
+              </a>
+            </article>
+          <% end %>
+          <% if pages[2] %>
+            <article class="medium">
+              <figure>
+                <img src="./<%= pages[2]['img_sm'] %>" />
+              </figure>
+              <hgroup>
+                <h1>
+                  <%= pages[2]['hed'] %>
+                </h1>
+                <h2><%= pages[2]['dek'] %></h2>
+              </hgroup>
+              <% pages[2]['grafs'].each do |graf| %>
+                <p>
+                  <%= graf %>
+                </p>
+              <% end %>
+              <a href="./<%= pages[2]['path'] %>">
+                Continue &#10142;
+              </a>
+            </article>
+          <% end %>
+        </div>
+        <% pages.slice(3..-1)&.each do |page| %>
+          <article class="small">
+            <figure>
+              <img src="./<%= page['img_sm'] %>" />
+            </figure>
+            <hgroup>
+              <h1>
+                <%= page['hed'] %>
+              </h1>
+              <h2>
+                <%= page['dek'] %>
+              </h2>
+            </hgroup>
+            <% page['grafs']&.first&.tap do |graf| %>
+              <p>
+                <%= graf %>
+              </p>
+            <% end %>
+            <a href="./<%= page['path'] %>">
+              Continue &#10142;
+            </a>
+          </article>
+        <% end %>
       </section>
       <aside>
         <%= render_partial(:_sidebar_right) %>

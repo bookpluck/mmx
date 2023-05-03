@@ -134,3 +134,27 @@
        url('./fonts/FjallaOne-Regular.ttf') format('truetype')
 }
 
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/LibreBaskerville-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/LibreBaskerville-Italic.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('./fonts/LibreBaskerville-Bold.ttf') format('truetype')
+}
+

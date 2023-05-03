@@ -22,6 +22,12 @@ body {
 
 a, a:visited {
   color: #0969da;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0969da;
+  text-decoration: underline;
 }
 
 main {
@@ -34,21 +40,21 @@ main {
 }
 
 main > section {
-  flex: 5;
-  padding-top: 2rem;
+  flex: 2;
+}
+
+@media only screen and (min-width: 1025px) {
+  main > section {
+    flex: 5;
+    padding-top: 2rem;
+    max-width: 50rem;
+  }
 }
 
 hr {
   border: none;
   border-top: 1.5px solid black;
   margin: 2rem 0;
-}
-
-.tombstone {
-  margin: 4rem 0 8rem;
-  font-size: 1.25rem;
-  width: 100%;
-  text-align: center;
 }
 
 /* TEXT UTILITIES */

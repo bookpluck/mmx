@@ -4,6 +4,8 @@
 
    Upper Bound:  1551px
    Desktop:      1025px
+   Tablet:        768px
+   Mobile:        480px
   */
 
   /* FONTS */
@@ -12,7 +14,7 @@
   --sans-serif-secondary: 'Fjalla One', sans-serif;
   --serif-primary: 'Frank Ruhl Libre', serif;
   --serif-secondary: 'Heuristica', serif;
-
+  --serif-tertiary: 'Libre Baskerville', serif;
 
   --font-size-sm: 1rem;
 
