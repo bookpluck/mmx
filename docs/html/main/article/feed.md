@@ -15,15 +15,11 @@ pages:
     path: essays/best-first-word  
     
     byline: Jack Windeyer
-    
-    tag: Essay
-    
+        
     hed: The Perfect First Word for Your Next Story 
     
     dek:
-    
-    standfirst:
-    
+        
     grafs: 
       - lede paragraph
       - nut paragraph
