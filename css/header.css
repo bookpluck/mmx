@@ -82,6 +82,7 @@ header hgroup p:first-of-type {
 }
 
 header hgroup h1 a,
+header hgroup h1 a:visted,
 header hgroup h1 a:hover {
   color: var(--body-color);
   text-decoration: none;

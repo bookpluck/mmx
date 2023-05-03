@@ -14,12 +14,13 @@ body {
   max-width: 80rem;
 }
 
-a, a:visited {
+main a,
+main a:visited {
   color: #0969da;
   text-decoration: none;
 }
 
-a:hover {
+main a:hover {
   color: #0969da;
   text-decoration: underline;
 }
