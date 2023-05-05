@@ -85,3 +85,10 @@ hr {
   font-size: 2rem;
 }
 
+/* OTHER UTILITIES */
+
+figure.bordered {
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
