@@ -50,14 +50,16 @@ main > aside:last-of-type {
   }
 }
 
-main > aside:first-of-type > section {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+main > aside:first-of-type > section,
+main > aside:last-of-type > section {
+  border-top: 1px solid #222;
+  padding: 1.5rem;
 }
 
-main > aside:last-of-type > section {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+main > aside:first-of-type > section:first-of-type,
+main > aside:last-of-type > section:first-of-type {
+  border-top: none;
+  padding-top: 0;
 }
 
 main > aside > section > small {
@@ -67,6 +69,15 @@ main > aside > section > small {
 main > aside > section > h1 {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+main > aside > section > p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+main > aside > section > ol {
+  padding-inline-start: 1.5rem;
 }
 
 main > aside > section > figure {
