@@ -35,7 +35,6 @@ main {
   main {
     flex-direction: row;
     font-size: var(--body-font-size);
-    padding: 0 2rem 3rem;
   }
 }
 
