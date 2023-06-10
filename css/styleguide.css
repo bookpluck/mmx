@@ -1,5 +1,5 @@
 .styleguide {
-  font-size: var(--body-font-size);
+  font-size: var(--font-size-md);
   padding: 0 var(--article-x-padding) 3rem;
   border-bottom: var(--border-width) solid var(--border-color);
 }
@@ -15,7 +15,7 @@
 .styleguide h2 {
   background-color: #333;
   color: white;
-  font-family: var(--sans-serif-primary);
+  font-family: var(--font-family);
   font-size: 1rem;
   font-weight: 500;
   margin: 0 var(--article-full-width-margin) 0;
@@ -26,7 +26,7 @@
 .styleguide h3 {
   border-bottom: 1px solid var(--border-color);
   border-top: 2px solid var(--border-color);
-  font-family: var(--sans-serif-primary);
+  font-family: var(--font-family);
   font-size: 1rem;
   font-weight: 700;
   margin: 0 var(--article-full-width-margin) 0.5rem;
@@ -37,7 +37,7 @@
 .styleguide h4 {
   text-align: left;
   display: inline-block;
-  font-family: var(--sans-serif-primary);
+  font-family: var(--font-family);
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
@@ -46,14 +46,14 @@
 }
 
 .styleguide p {
-  font-size: var(--body-font-size);
+  font-size: var(--font-size-md);
   line-height: var(--boder-line-height);
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
 .styleguide aside {
-  font-size: var(--body-font-size);
+  font-size: var(--font-size-md);
   font-weight: normal;
   margin: 0 var(--article-full-width-margin) 1rem;
   padding: 0 1rem;
@@ -63,7 +63,7 @@
 .styleguide aside strong:before {
   content: '\273D';
   display: inline-block;
-  font-family: var(--sans-serif-primary);
+  font-family: var(--font-family);
   font-size: 1rem;
   line-height: 1rem;
   font-style: normal;
@@ -77,7 +77,7 @@
 .styleguide aside strong {
   color: DimGray;
   display: block;
-  font-family: var(--sans-serif-primary);
+  font-family: var(--font-family);
   font-style: normal;
   font-size: 0.875rem;
   line-height: 0.875rem;
@@ -93,7 +93,7 @@
   color: IndianRed;
   content: '\2718 \00A0 \00A0 weak example';
   display: block;
-  font-family: var(--sans-serif-primary);
+  font-family: var(--font-family);
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
@@ -120,7 +120,7 @@
   color: MediumSeaGreen;
   content: '\2714 \00A0 \00A0 strong example';
   display: block;
-  font-family: var(--sans-serif-primary);
+  font-family: var(--font-family);
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;

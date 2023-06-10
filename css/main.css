@@ -1,7 +1,7 @@
 html, body {
   background: var(--background-color);
   color: black;
-  font-family: var(--primary-font);
+  font-family: var(--font-family);
   font-size: 16px;
   line-height: 1.5rem;
   margin-top: 0;
@@ -25,7 +25,7 @@ main {
   color: #222;
   display: flex;
   flex-direction: column;
-  font-size: var(--body-font-size-mobile);
+  font-size: var(--font-size-lg);
   margin-left: auto;
   margin-right: auto;
   max-width: 80rem;
@@ -34,7 +34,7 @@ main {
 @media only screen and (min-width: 768px) {
   main {
     flex-direction: row;
-    font-size: var(--body-font-size);
+    font-size: var(--font-size-md);
   }
 }
 
@@ -47,7 +47,7 @@ main > section {
   main > section {
     order: 2;
     flex: 5;
-    padding-top: 2rem;
+    padding-top: 0;
     max-width: 50rem;
   }
 }
@@ -71,7 +71,7 @@ hr {
 }
 
 .text.sans {
-  font-family: var(--sans-serif-primary);
+  font-family: var(--font-family);
 }
 
 .text.lg {

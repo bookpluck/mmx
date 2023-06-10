@@ -1,13 +1,13 @@
 main > aside {
   flex: 2;
-  font-size: var(--body-font-size);
+  font-size: var(--font-size-md);
   margin: 0;
   padding: 2rem 0 2rem;
 }
 
 @media only screen and (min-width: 1025px) {
   main > aside {
-    opacity: 0.5;
+    opacity: 1;
   }
 }
 
@@ -16,8 +16,8 @@ main > aside:hover {
 }
 
 main > aside:first-of-type {
-  border-left: 1px solid #222;
-  border-right: 1px solid #222;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
   order: 2;
 }
 
@@ -38,8 +38,8 @@ main > aside:first-of-type {
 }
 
 main > aside:last-of-type {
-  border-left: 1px solid #222;
-  border-right: 1px solid #222;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
   display: none;
 }
 

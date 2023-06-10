@@ -5,13 +5,21 @@ section.sources {
 }
 
 section.sources h2 {
-  font-family: var(--secondary-font);
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: var(--spacing-lg);
   display: block;
+  font-family: var(--font-family);
+  font-size: var(--font-size-lg);
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: var(--spacing-lg);
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1025px) {
+  section.sources h2 {
+    font-size: var(--font-size-md);
+  }
 }
 
 section.sources .source {
@@ -63,6 +71,6 @@ section.sources .source .metadata u {
 }
 
 section.sources .source .metadata a {
-  font-family: var(--secondary-font);
+  font-family: var(--font-family);
 }
 

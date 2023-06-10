@@ -8,36 +8,24 @@
    Mobile:        480px
   */
 
-  /* FONTS */
+  /* TEXT */
 
-  --sans-serif-primary: 'Roboto', sans-serif;
-  --sans-serif-secondary: 'Fjalla One', sans-serif;
-  --serif-primary: 'Frank Ruhl Libre', serif;
-  --serif-secondary: 'Heuristica', serif;
-  --serif-tertiary: 'Libre Baskerville', serif;
-
-  --font-size-sm: 1rem;
-
-  --primary-font: 'Frank Ruhl Libre', serif;
-  --secondary-font: 'Frank Ruhl Libre', serif;
-  --header-font: var(--secondary-font);
-  --header-font-weight: 400;
-
-  --body-font: var(--primary-font);
-  --body-font-size: 1.125rem;
-  --body-font-size-mobile: 1.25rem;
-  --body-line-height: 1.4;
-  --body-color: #222;
+  --font-family: 'Frank Ruhl Libre', serif;
+  --font-size-sm: 0.75rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --line-height-md: 1.4;
 
   /* TIDBITS */
 
   --border-width-xs: 1px;
   --border-width-sm: 2px;
   --border-width: 1px;
-  --border-color: #333;
+  --border-color: #ddd;
 
   /* LAYOUT */
 
+  --spacing-xs: 0.25rem;
   --spacing-sm: 0.75rem;
   --spacing-md: 1.1875rem;
   --spacing-lg: 2.25rem;
