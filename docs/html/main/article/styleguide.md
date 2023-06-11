@@ -2,10 +2,9 @@
 
 ## Guidance
 
-- __Keep it flat.__ Aim for three indentation levels deep as a local maximum
 - __Keep it semantic.__ In asides, `<b>` tags represent positive rules
   (e.g. "Prefer") and `<u>` tags represent negative rules (e.g. "Avoid...").
-- __Headers__
+- __Keep it flat.__
   - `<h2>` is for category
   - `<h3>` is for specific advise using imperative voice
   - if you find yourself needing `<h4>`, seperate into a new styleguide
