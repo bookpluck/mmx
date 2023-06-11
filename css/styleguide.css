@@ -2,47 +2,74 @@
   font-size: var(--font-size-md);
   padding: 0 var(--article-x-padding) 3rem;
   border-bottom: var(--border-width) solid var(--border-color);
+  margin-top: var(--spacing-xl);
 }
 
 .styleguide h1 {
-  font-family: 'Noto Serif', serif;
-  font-size: 2rem;
-  font-weight: 700;
+  font-family: var(--font-family);
+  font-size: var(--font-size-lg);
+  font-weight: bold;
   text-align: center;
   margin-top: 0;
 }
 
+@media only screen and (min-width: 1025px) {
+  .styleguide h1 {
+    font-size: var(--font-size-md);
+  }
+}
+
+.styleguide hgroup {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
 .styleguide h2 {
-  background-color: #333;
-  color: white;
   font-family: var(--font-family);
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0 var(--article-full-width-margin) 0;
-  padding: 0.5rem 1rem;
+  font-size: var(--font-size-lg);
+  font-style: normal;
+  font-weight: bold;
+  margin: var(--spacing-xl) 0 var(--spacing-sm);
+  max-width: none;
+  text-align: left;
   text-transform: uppercase;
+  border-bottom: 1px solid var(--border-color);
+}
+
+@media only screen and (min-width: 1025px) {
+  .styleguide h2 {
+    font-size: var(--font-size-md);
+  }
 }
 
 .styleguide h3 {
-  border-bottom: 1px solid var(--border-color);
-  border-top: 2px solid var(--border-color);
   font-family: var(--font-family);
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 var(--article-full-width-margin) 0.5rem;
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
+  font-size: var(--font-size-lg);
+  font-style: normal;
+  font-weight: bold;
+  margin: 0 0 var(--spacing-sm);
+  text-align: left;
+}
+
+@media only screen and (min-width: 1025px) {
+  .styleguide h3 {
+    font-size: var(--font-size-md);
+  }
 }
 
 .styleguide h4 {
-  text-align: left;
-  display: inline-block;
   font-family: var(--font-family);
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  font-size: var(--font-size-lg);
+  font-style: italic;
+  font-weight: bold;
+  margin: 0 0 var(--spacing-sm);
+  text-align: left;
+}
+
+@media only screen and (min-width: 1025px) {
+  .styleguide h4 {
+    font-size: var(--font-size-md);
+  }
 }
 
 .styleguide p {
@@ -56,8 +83,7 @@
   font-size: var(--font-size-md);
   font-weight: normal;
   margin: 0 var(--article-full-width-margin) 1rem;
-  padding: 0 1rem;
-  padding-left: 2.5rem;
+  padding: 0 var(--spacing-lg);
 }
 
 .styleguide aside strong:before {
@@ -91,15 +117,20 @@
 
 .styleguide aside u:before {
   color: IndianRed;
-  content: '\2718 \00A0 \00A0 weak example';
+  content: '\2718 \00A0 \00A0 weak';
   display: block;
   font-family: var(--font-family);
-  font-size: 0.875rem;
+  font-size: var(--font-size-lg);
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   height: 100%;
   margin-right: 0.5rem;
-  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1025px) {
+  .styleguide aside u:before {
+    font-size: var(--font-size-md);
+  }
 }
 
 .styleguide aside u mark {
@@ -118,15 +149,20 @@
 
 .styleguide aside b:before {
   color: MediumSeaGreen;
-  content: '\2714 \00A0 \00A0 strong example';
+  content: '\2714 \00A0 \00A0 strong';
   display: block;
   font-family: var(--font-family);
-  font-size: 0.875rem;
+  font-size: var(--font-size-lg);
   font-style: normal;
   font-weight: 700;
   height: 100%;
   margin-right: 0.5rem;
-  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1025px) {
+  .styleguide aside b:before {
+    font-size: var(--font-size-md);
+  }
 }
 
 .styleguide aside u:first-letter,
@@ -137,7 +173,7 @@
 
 .styleguide aside u,
 .styleguide aside b {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--spacing-md);
   display: block;
   font-weight: 400;
   text-decoration: none;
