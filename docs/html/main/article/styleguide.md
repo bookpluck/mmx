@@ -2,8 +2,10 @@
 
 ## Guidance
 
-- __Keep it semantic.__ In asides, `<b>` tags represent positive rules
-  (e.g. "Prefer") and `<u>` tags represent negative rules (e.g. "Avoid...").
+- __Keep it semantic.__ 
+  - `<aside>`
+    - `<b>` tags represent positive rules (e.g. "Prefer") 
+    - `<u>` tags represent negative rules (e.g. "Avoid...")
 - __Keep it flat.__
   - `<h2>` is for category
   - `<h3>` is for specific advise using imperative voice
