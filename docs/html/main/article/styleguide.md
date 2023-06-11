@@ -25,14 +25,12 @@
   <h2>Titles</h2> 
   <h3>Prefer Them Short & Sweet</h3>
   <aside>
-    <b>strong</b>
-    <p>
+    <b>
       <!-- example of good -->
-    </p>
-    <u>weak</u>
-    <p>
+    </b>
+    <u>
       <!-- example of bad -->
-    </p>        
+    </u>        
   </aside>
   <p>
     <!-- explanation -->
