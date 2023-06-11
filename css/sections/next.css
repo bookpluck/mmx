@@ -8,3 +8,19 @@ section.next ul li:before {
   content: '\27A5';
   margin-right: 0.5rem;
 }
+
+section.next h2 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+  display: block;
+}
+
+@media only screen and (min-width: 1025px) {
+  section.next h2 {
+    font-size: var(--font-size-md);
+  }
+}
+

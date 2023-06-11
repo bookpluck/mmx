@@ -92,6 +92,7 @@ main article.splash {
   main article.splash {
     padding: 0 var(--article-x-padding) 1rem;
     margin: 0;
+    margin-top: 2rem;
   }
 }
 
