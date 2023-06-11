@@ -2,10 +2,14 @@
 
 ## Guidance
 
-- __Keep it flat.__ Aim for three indentation levels deep as a local maximum
-- __Keep it semantic.__ In asides, `<b>` tags represent positive rules
-  (e.g. "Prefer") and `<u>` tags represent negative rules (e.g. "Avoid...").
-
+- __Keep it semantic.__ 
+  - `<aside>`
+    - `<b>` tags represent positive rules (e.g. "Prefer") 
+    - `<u>` tags represent negative rules (e.g. "Avoid...")
+- __Keep it flat.__
+  - `<h2>` is for category
+  - `<h3>` is for specific advise using imperative voice
+  - if you find yourself needing `<h4>`, seperate into a new styleguide
 
 ## Example
 
@@ -17,24 +21,21 @@
     </li>
   </menu>
 
-  <h1 id="title">How to Write</h1>
-  <h2 id="Metadata">Metadata</h2> 
-  <h3>Titles</h3>
-  <h4>Prefer Them Short & Sweet</h4>
+  <h1 id="title">Story Meta-data</h1>
+  <h2>Titles</h2> 
+  <h3>Prefer Them Short & Sweet</h3>
   <aside>
-    <b>strong</b>
-    <p>
+    <b>
       <!-- example of good -->
-    </p>
-    <u>weak</u>
-    <p>
+    </b>
+    <u>
       <!-- example of bad -->
-    </p>        
+    </u>        
   </aside>
   <p>
     <!-- explanation -->
   </p>
-  <h4>Avoid Giving Too Much Away</h4>
+  <h3>Avoid Giving Too Much Away</h3>
   <aside>
     <strong>note</strong>
     <p>
